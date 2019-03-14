@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+header {
+}
+.layout-container > header > a {
+  color: #263944;
+}
+
+.kind-class {
+  color: #34bee0;
+  background-color: #ccf5ff;
+}
+.kind-variable {
+  color: #00dd95;
+  background-color: #d1fff0;
+}
+.kind-interface {
+  color: #ffa08d;
+  background-color: #ffeae6;
+}
+
+.inherited-summary thead a {
+  color: black;
+}
+
+/**
+* Hide some stuff we don't want
+*/
+.identifier-dir-tree,
+table.summary > tbody > tr > td:first-child,
+.detail span.access {
+  display: none;
+}

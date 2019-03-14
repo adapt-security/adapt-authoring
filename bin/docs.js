@@ -39,8 +39,7 @@ const esconfig = {
       option: {
         styles: ["./docs/adapt.css"]
       }
-    },
-    // { name: "esdoc-webapp-plugin" }
+    }
   ]
 };
 /**
@@ -54,10 +53,11 @@ function getIncludes() {
     const depPkgDir = path.join(process.cwd(), 'node_modules', dep, 'package.json');
     try {
       const docConfig = fs.readJsonSync(depPkgDir).adapt_authoring.documentation;
-      if(docConfig.enable) includes.push(`${dep}/.+\\.js$`);
+      if(docConfig.enable) includes.push(`^${dep}\/(?!node_modules).+\.js$`);
     } catch(e) {} // couldn't read the pkg attribute but don't need to do anything
   });
   // HACK include temp file created by our 'externals-plugin'...fix this
+  console.log(includes);
   includes.push('externals.js');
   return includes;
 }
