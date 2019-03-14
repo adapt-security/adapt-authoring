@@ -1,5 +1,6 @@
 const async = require('async');
-const esdoc = require('esdoc').default;
+const esdoc = require('
+').default;
 const fs = require('fs-extra');
 const path = require('path');
 
@@ -57,7 +58,6 @@ function getIncludes() {
     } catch(e) {} // couldn't read the pkg attribute but don't need to do anything
   });
   // HACK include temp file created by our 'externals-plugin'...fix this
-  console.log(includes);
   includes.push('externals.js');
   return includes;
 }
