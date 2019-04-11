@@ -102,6 +102,7 @@ const externals = {
 * https://nodejs.org/api/
 */
   'events~EventEmitter': 'https://nodejs.org/api/events.html#events_class_eventemitter',
+  'http~ServerResponse': 'https://nodejs.org/api/http.html#http_class_http_serverresponse',
 /**
 * Express.js
 * https://expressjs.com/en/4x/api.html
