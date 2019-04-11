@@ -16,6 +16,7 @@
     "url": "https://github.com/adaptlearning/adapt_authoring.git"
   },
   "framework": "3",
+  "framework": "4",
   "engines": {
     "node": "10.x"
   },
