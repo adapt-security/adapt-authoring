@@ -3,10 +3,6 @@
   "version": "0.10.0",
   "license": "GPL-3.0",
   "description": "A server-based user interface for authoring eLearning courses using the Adapt Framework.",
-  "keywords": [
-    "adapt",
-    "authoring"
-  ],
   "scripts": {
     "docs": "node ./bin/docs.js",
     "start": "node ./bin/start.js"
