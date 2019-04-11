@@ -37,7 +37,6 @@
     "esdoc-inject-style-plugin": "1.0.0",
     "esdoc-node": "1.0.3",
     "esdoc-standard-plugin": "1.0.0",
-    "fs-extra": "6.0.1",
-    "tapable": "1.1.1"
+    "fs-extra": "6.0.1"
   }
 }
