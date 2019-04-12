@@ -1,6 +1,5 @@
 const async = require('async');
-const esdoc = require('
-').default;
+const esdoc = require('esdoc').default;
 const fs = require('fs-extra');
 const path = require('path');
 
