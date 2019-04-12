@@ -22,6 +22,7 @@
     "adapt-authoring-oauth": "git+https://github.com/taylortom/adapt-authoring-core.git",
     "adapt-authoring-missingroute": "git+https://github.com/taylortom/adapt-authoring-missingroute.git",
     "adapt-authoring-mongodb": "git+https://github.com/taylortom/adapt-authoring-mongodb.git",
+    "adapt-authoring-prototypeui": "git+https://github.com/taylortom/adapt-authoring-prototypeui.git",
     "adapt-authoring-server": "git+https://github.com/taylortom/adapt-authoring-server.git",
     "adapt-authoring-ui": "git+https://github.com/taylortom/adapt-authoring-ui.git",
     "adapt-authoring-users": "git+https://github.com/taylortom/adapt-authoring-users.git"
