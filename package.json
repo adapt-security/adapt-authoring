@@ -5,7 +5,10 @@
   "description": "A server-based user interface for authoring eLearning courses using the Adapt Framework.",
   "scripts": {
     "docs": "node ./bin/docs.js",
-    "start": "node ./bin/start.js"
+    "start": "node ./bin/start.js",
+    "debug": "DEBUG=true node ./bin/start.js",
+    "verbose": "DEBUG=express:* node ./bin/start.js",
+    "inspect": "node --inspect-brk ./bin/start.js"
   },
   "repository": {
     "type": "git",
