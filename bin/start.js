@@ -1,2 +1,2 @@
-const App = require('adapt-authoring-core').App;
-App().start();
+const { App } = require('adapt-authoring-core');
+App.getInstance().start();
