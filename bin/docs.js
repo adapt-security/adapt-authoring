@@ -8,7 +8,7 @@ const esconfig = {
   source: "./node_modules",
   destination: "./docs/build",
   includes: getIncludes(),
-  index: "./docs/DOCS.md",
+  index: "./docs/INDEX.md",
   plugins: [
     {
       name: "esdoc-standard-plugin",
