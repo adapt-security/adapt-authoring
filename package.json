@@ -1,8 +1,13 @@
 {
   "name": "adapt-authoring",
   "version": "0.10.0",
-  "license": "GPL-3.0",
   "description": "A server-based user interface for authoring eLearning courses using the Adapt Framework.",
+  "homepage": "https://github.com/taylortom/adapt-authoring",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adaptlearning/adapt_authoring.git"
+  },
   "scripts": {
     "docs": "node ./bin/docs.js",
     "start": "node ./bin/start.js",
@@ -11,14 +16,7 @@
     "verbose": "DEBUG=express:* node ./bin/start.js",
     "inspect": "node --inspect-brk ./bin/start.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/adaptlearning/adapt_authoring.git"
-  },
   "framework": "4",
-  "engines": {
-    "node": "10.x"
-  },
   "dependencies": {
     "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git",
     "adapt-authoring-helloworld": "git+https://github.com/taylortom/adapt-authoring-helloworld.git",
@@ -40,5 +38,8 @@
     "esdoc-node": "1.0.3",
     "esdoc-standard-plugin": "1.0.0",
     "fs-extra": "6.0.1"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
