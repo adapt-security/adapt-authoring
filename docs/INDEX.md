@@ -1,4 +1,4 @@
-## Adapt authoring tool v0.8.0 documentation
+## Adapt authoring tool documentation
 
 You've found the documentation for the Adapt authoring tool!
 
