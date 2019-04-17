@@ -4,8 +4,10 @@ const fs = require('fs-extra');
 const path = require('path');
 
 const pkg = require('../package.json');
+const dev = require('../.dev.json');
+
 const esconfig = {
-  source: "./node_modules",
+  source: dev.localModulesPath || "./node_modules",
   destination: "./docs/build",
   includes: getIncludes(),
   index: "./docs/INDEX.md",
@@ -50,14 +52,17 @@ const esconfig = {
 function getIncludes() {
   let includes = [];
   Object.keys(pkg.dependencies).forEach(dep => {
-    const depPkgDir = path.join(process.cwd(), 'node_modules', dep, 'package.json');
+    const depPkgDir = dev.localModulesPath ?
+      path.join(dev.localModulesPath, dep, 'package.json') :
+      path.join(process.cwd(), 'node_modules', dep, 'package.json');
+
     try {
       const docConfig = fs.readJsonSync(depPkgDir).adapt_authoring.documentation;
       if(docConfig.enable) includes.push(`^${dep}\/(?!node_modules).+\.js$`);
     } catch(e) {} // couldn't read the pkg attribute but don't need to do anything
   });
   // HACK include temp file created by our 'externals-plugin'...fix this
-  includes.push('externals.js');
+  includes.push('externals.js$');
   return includes;
 }
 
