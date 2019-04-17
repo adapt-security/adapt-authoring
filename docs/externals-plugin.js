@@ -108,6 +108,7 @@ const externals = {
 * Express.js
 * https://expressjs.com/en/4x/api.html
 */
+  'express~App': 'https://expressjs.com/en/4x/api.html#app',
   'express~Router': 'https://expressjs.com/en/4x/api.html#router',
 };
 
