@@ -15,7 +15,10 @@ if(localModulesPath) {
     if(modPath.includes('adapt-authoring')) {
       try {
         return __require.call(this, path.join(localModulesPath, modPath));
-      } catch(e) {}
+      } catch(e) {
+        console.log(`Failed to load local '${modPath}', ${e.message}`);
+        console.log(e.stack);
+      }
     }
     return __require.apply(this, arguments);
   };
