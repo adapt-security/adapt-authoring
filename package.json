@@ -27,6 +27,7 @@
     "adapt-authoring-oauth": "git+https://github.com/taylortom/adapt-authoring-oauth.git",
     "adapt-authoring-prototypeui": "git+https://github.com/taylortom/adapt-authoring-prototypeui.git",
     "adapt-authoring-server": "git+https://github.com/taylortom/adapt-authoring-server.git",
+    "adapt-authoring-theme": "git+https://github.com/taylortom/adapt-authoring-theme.git",
     "adapt-authoring-ui": "git+https://github.com/taylortom/adapt-authoring-ui.git",
     "adapt-authoring-users": "git+https://github.com/taylortom/adapt-authoring-users.git"
   },
