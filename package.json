@@ -13,8 +13,8 @@
     "start": "node ./bin/start.js",
     "dev": "node ./bin/dev.js",
     "debug": "DEBUG=true node ./bin/start.js",
-    "verbose": "DEBUG=express:* node ./bin/start.js",
-    "inspect": "node --inspect-brk ./bin/start.js"
+    "inspect": "node --inspect-brk ./bin/dev.js",
+    "verbose": "DEBUG=express:* node ./bin/start.js"
   },
   "framework": "4",
   "dependencies": {
