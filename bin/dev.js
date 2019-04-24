@@ -22,14 +22,12 @@ console.log(`dev.js: using local modules in '${localModulesPath}'\n`);
 * @note Specify local modules folder in package.json localModulesPath attribute
 */
 Module.prototype.require = function(modPath) {
-  // if(modPath.match(/^adapt-authoring/) && !failedRequires.includes(modPath)) {
   if(modPath.includes('adapt-authoring') && !failedRequires.includes(modPath)) {
     const parts = modPath.split(path.sep);
 
     if(parts.length > 1) {
       const file = parts.pop();
       let m;
-
       parts.reverse().forEach(p => {
         if(!m && p.search(/^adapt-authoring/) > -1) m = p;
       });
