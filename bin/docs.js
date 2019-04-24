@@ -4,10 +4,12 @@ const fs = require('fs-extra');
 const path = require('path');
 
 const pkg = require('../package.json');
-const dev = require('../.dev.json');
+
+const localModulesPath;
+try { localModulesPath = require('../.dev.json').localModulesPath; } catch(e) {}
 
 const esconfig = {
-  source: dev.localModulesPath || "./node_modules",
+  source: localModulesPath || "./node_modules",
   destination: "./docs/build",
   includes: getIncludes(),
   index: "./docs/INDEX.md",
@@ -52,8 +54,8 @@ const esconfig = {
 function getIncludes() {
   let includes = [];
   Object.keys(pkg.dependencies).forEach(dep => {
-    const depPkgDir = dev.localModulesPath ?
-      path.join(dev.localModulesPath, dep, 'package.json') :
+    const depPkgDir = localModulesPath ?
+      path.join(localModulesPath, dep, 'package.json') :
       path.join(process.cwd(), 'node_modules', dep, 'package.json');
 
     try {
