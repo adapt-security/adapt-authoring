@@ -31,13 +31,7 @@
     "adapt-authoring-users": "git+https://github.com/taylortom/adapt-authoring-users.git"
   },
   "devDependencies": {
-    "async": "2.6.1",
-    "esdoc": "1.1.0",
-    "esdoc-importpath-plugin": "1.0.2",
-    "esdoc-inject-style-plugin": "1.0.0",
-    "esdoc-node": "1.0.3",
-    "esdoc-standard-plugin": "1.0.0",
-    "fs-extra": "6.0.1"
+    "adapt-authoring-docs": "git+https://github.com/taylortom/adapt-authoring-docs.git"
   },
   "engines": {
     "node": "10.x"
