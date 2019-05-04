@@ -1,3 +1,8 @@
+/**
+* Hijacks the require function to allow use of local modules.
+* @note Only applies to modules prefixed 'adapt-authoring'
+* @note Specify local modules folder in /dev.json localModulesPath attribute
+*/
 const Module = require('module');
 const path = require('path');
 // path to load local modules
@@ -16,11 +21,7 @@ const failedRequires = [];
 const __require = Module.prototype.require;
 
 console.log(`dev.js: using local modules in '${localModulesPath}'\n`);
-/**
-* Hijacks the require function to allow use of local modules.
-* @note Only applies to modules prefixed 'adapt-authoring'
-* @note Specify local modules folder in package.json localModulesPath attribute
-*/
+
 Module.prototype.require = function(modPath) {
   if(modPath.includes('adapt-authoring') && !failedRequires.includes(modPath)) {
     const parts = modPath.split(path.sep);
