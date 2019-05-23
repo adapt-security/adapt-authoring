@@ -4,16 +4,15 @@
   "description": "A server-based user interface for authoring eLearning courses using the Adapt Framework.",
   "homepage": "https://github.com/taylortom/adapt-authoring",
   "license": "GPL-3.0",
+  "bin": {
+    "adaptat": "./bin/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/adaptlearning/adapt_authoring.git"
   },
   "scripts": {
-    "docs": "node ./bin/docs.js",
-    "start": "node ./bin/start.js",
-    "dev": "node ./bin/dev.js",
-    "debug": "DEBUG=true node --inspect-brk ./bin/dev.js",
-    "verbose": "DEBUG=express:* node ./bin/start.js"
+    "debug": "DEBUG=true node --inspect-brk ./bin/cli.js start"
   },
   "framework": "4",
   "dependencies": {
@@ -22,9 +21,11 @@
     "adapt-authoring-logger": "git+https://github.com/taylortom/adapt-authoring-logger.git",
     "adapt-authoring-middleware": "git+https://github.com/taylortom/adapt-authoring-middleware.git",
     "adapt-authoring-missingroute": "git+https://github.com/taylortom/adapt-authoring-missingroute.git",
+    "adapt-authoring-mockapi": "git+https://github.com/taylortom/adapt-authoring-mockapi.git",
     "adapt-authoring-mongodb": "git+https://github.com/taylortom/adapt-authoring-mongodb.git",
     "adapt-authoring-oauth": "git+https://github.com/taylortom/adapt-authoring-oauth.git",
     "adapt-authoring-prototypeui": "git+https://github.com/taylortom/adapt-authoring-prototypeui.git",
+    "adapt-authoring-react": "git+https://github.com/taylortom/adapt-authoring-react.git",
     "adapt-authoring-server": "git+https://github.com/taylortom/adapt-authoring-server.git",
     "adapt-authoring-theme": "git+https://github.com/taylortom/adapt-authoring-theme.git",
     "adapt-authoring-ui": "git+https://github.com/taylortom/adapt-authoring-ui.git",
