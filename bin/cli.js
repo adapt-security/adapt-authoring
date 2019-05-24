@@ -4,6 +4,7 @@ const path = require('path');
 const { input, command } = getInput();
 const options = getOptions();
 
+console.log();
 processEnv();
 if(process.env.NODE_ENV === 'dev' && process.env.aat_local_modules_path) {
   hijackRequire();
@@ -45,6 +46,8 @@ function processEnv() {
     if(e.code !== 'MODULE_NOT_FOUND') console.log(`Failed to load ${path.resolve(`../.${process.env.NODE_ENV}.json`)}: ${e}`);
   }
   Object.entries(options).forEach(([key,val]) => process.env[`aat_${key}`] = val);
+
+  console.log(`Running the application with '${process.env.NODE_ENV}' environment`);
 }
 /**
 * Hijacks the require function to allow use of local modules.
@@ -84,6 +87,7 @@ function hijackRequire() {
 * Tries to load the relevant script
 */
 function loadScript() {
+  console.log();
   try {
     require(`./${command}`);
   } catch(e) {
