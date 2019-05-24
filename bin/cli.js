@@ -5,7 +5,7 @@ const { input, command } = getInput();
 const options = getOptions();
 
 processEnv();
-if(process.env.aat_local_modules_path) {
+if(process.env.NODE_ENV === 'dev' && process.env.aat_local_modules_path) {
   hijackRequire();
 }
 loadScript();
