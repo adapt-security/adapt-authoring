@@ -63,23 +63,29 @@ function hijackRequire() {
   Module.prototype.require = function(modPath) {
     if(modPath.includes('adapt-authoring') && !failedRequires.includes(modPath)) {
       const parts = modPath.split(path.sep);
+      let isRoot = false;
 
       if(parts.length > 1) {
         const file = parts.pop();
         let i = 0, m;
         parts.reverse().forEach(p => {
           if(!m) {
-            i++;
             if(p.search(/^adapt-authoring/) > -1) m = p;
+            i++;
           }
         });
         modPath = path.join(...parts.reverse().slice(i*-1), file);
+        if(modPath.search(`^${path.basename(process.cwd())}${path.sep}`) > -1) isRoot = true;
       }
       try {
         return __require.call(this, path.resolve(path.join(process.env.aat_local_modules_path, modPath)));
       } catch(e) {
-        console.log(`Failed to load local '${modPath}', ${e.message}`);
-        console.log(e.stack);
+        if(isRoot) {
+          try {
+            return __require.call(this, path.resolve(process.cwd(), '..', modPath));
+          } catch(e) {}
+        }
+        console.log(`Failed to load local '${modPath}', ${e.message}, using standard require behaviour`);
         failedRequires.push(modPath);
       }
     }
