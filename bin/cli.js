@@ -55,7 +55,7 @@ function processEnv() {
 * @note Lookds for aat_local_modules_path env var
 */
 function hijackRequire() {
-  console.log(`Using Adapt modules in ${process.env.aat_local_modules_path}`);
+  console.log(`Using Adapt modules in ${path.resolve(process.env.aat_local_modules_path)}`);
   // keep track of any failed requires, so we only log the problem once
   const failedRequires = [];
   const __require = Module.prototype.require;
@@ -76,7 +76,7 @@ function hijackRequire() {
         modPath = path.join(...parts.reverse().slice(i*-1), file);
       }
       try {
-        return __require.call(this, path.join(process.env.aat_local_modules_path, modPath));
+        return __require.call(this, path.resolve(path.join(process.env.aat_local_modules_path, modPath)));
       } catch(e) {
         console.log(`Failed to load local '${modPath}', ${e.message}`);
         console.log(e.stack);
