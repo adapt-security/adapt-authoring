@@ -66,11 +66,14 @@ function hijackRequire() {
 
       if(parts.length > 1) {
         const file = parts.pop();
-        let m;
+        let i = 0, m;
         parts.reverse().forEach(p => {
-          if(!m && p.search(/^adapt-authoring/) > -1) m = p;
+          if(!m) {
+            i++;
+            if(p.search(/^adapt-authoring/) > -1) m = p;
+          }
         });
-        modPath = path.join(m, file);
+        modPath = path.join(...parts.reverse().slice(i*-1), file);
       }
       try {
         return __require.call(this, path.join(process.env.aat_local_modules_path, modPath));
