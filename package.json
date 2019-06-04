@@ -17,18 +17,17 @@
   "framework": "4",
   "dependencies": {
     "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git",
+    "adapt-authoring-course": "git+https://github.com/taylortom/adapt-authoring-course.git",
     "adapt-authoring-helloworld": "git+https://github.com/taylortom/adapt-authoring-helloworld.git",
     "adapt-authoring-logger": "git+https://github.com/taylortom/adapt-authoring-logger.git",
     "adapt-authoring-middleware": "git+https://github.com/taylortom/adapt-authoring-middleware.git",
     "adapt-authoring-missingroute": "git+https://github.com/taylortom/adapt-authoring-missingroute.git",
-    "adapt-authoring-mockapi": "git+https://github.com/taylortom/adapt-authoring-mockapi.git",
     "adapt-authoring-mongodb": "git+https://github.com/taylortom/adapt-authoring-mongodb.git",
     "adapt-authoring-oauth": "git+https://github.com/taylortom/adapt-authoring-oauth.git",
     "adapt-authoring-prototypeui": "git+https://github.com/taylortom/adapt-authoring-prototypeui.git",
     "adapt-authoring-react": "git+https://github.com/taylortom/adapt-authoring-react.git",
     "adapt-authoring-server": "git+https://github.com/taylortom/adapt-authoring-server.git",
     "adapt-authoring-theme": "git+https://github.com/taylortom/adapt-authoring-theme.git",
-    "adapt-authoring-ui": "git+https://github.com/taylortom/adapt-authoring-ui.git",
     "adapt-authoring-users": "git+https://github.com/taylortom/adapt-authoring-users.git"
   },
   "devDependencies": {
