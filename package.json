@@ -17,7 +17,7 @@
   "framework": "4",
   "dependencies": {
     "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git",
-    "adapt-authoring-course": "git+https://github.com/taylortom/adapt-authoring-course.git",
+    "adapt-authoring-courses": "git+https://github.com/taylortom/adapt-authoring-courses.git",
     "adapt-authoring-helloworld": "git+https://github.com/taylortom/adapt-authoring-helloworld.git",
     "adapt-authoring-logger": "git+https://github.com/taylortom/adapt-authoring-logger.git",
     "adapt-authoring-middleware": "git+https://github.com/taylortom/adapt-authoring-middleware.git",
