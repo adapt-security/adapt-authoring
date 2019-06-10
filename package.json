@@ -14,6 +14,14 @@
   "scripts": {
     "debug": "DEBUG=true node --inspect-brk ./bin/cli.js start"
   },
+  "adapt_authoring": {
+    "documentation": {
+      "enable": true,
+      "includes": {
+        "docs": "docs/*"
+      }
+    }
+  },
   "framework": "4",
   "dependencies": {
     "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git",
