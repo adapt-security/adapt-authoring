@@ -81,6 +81,14 @@ function hijackRequire() {
       try {
         return __require.call(this, path.resolve(path.join(env.aat_local_modules_path, modPath)));
       } catch(e) {
+        switch(e.name) {
+          case 'SyntaxError':
+          case 'TypeError':
+            console.trace(e);
+            process.exit(1);
+          default:
+            console.log(e.name);
+        }
         if(isRoot) {
           try {
             return __require.call(this, path.resolve(process.cwd(), '..', modPath));
