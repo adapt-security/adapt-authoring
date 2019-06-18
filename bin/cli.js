@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 const Module = require('module');
 const path = require('path');
+
 const { input, command } = getInput();
 const options = getOptions();
+const env = process.env;
 
-console.log();
 processEnv();
-if(process.env.NODE_ENV === 'dev' && process.env.aat_local_modules_path) {
+if(env.NODE_ENV === 'dev' && env.aat_local_modules_path) {
   hijackRequire();
 }
 loadScript();
@@ -38,16 +39,16 @@ function getOptions() {
 * Makes sure the NODE_ENV is set, and any options are stored in the process.env with an aat_ prefix
 */
 function processEnv() {
-  process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
+  process.env.NODE_ENV = env.NODE_ENV || 'dev';
   // try to load any local env variables
   try {
-    Object.entries(require(`../.${process.env.NODE_ENV}.json`)).forEach(([key,val]) => options[key] = val);
+    Object.entries(require(`../.${env.NODE_ENV}.json`)).forEach(([key,val]) => options[key] = val);
   } catch(e) {
-    if(e.code !== 'MODULE_NOT_FOUND') console.log(`Failed to load ${path.resolve(`../.${process.env.NODE_ENV}.json`)}: ${e}`);
+    if(e.code !== 'MODULE_NOT_FOUND') console.log(`Failed to load ${path.resolve(`../.${env.NODE_ENV}.json`)}: ${e}`);
   }
   Object.entries(options).forEach(([key,val]) => process.env[`aat_${key}`] = val);
 
-  console.log(`Running the application with '${process.env.NODE_ENV}' environment`);
+  console.log(`Running the application with '${env.NODE_ENV}' environment`);
 }
 /**
 * Hijacks the require function to allow use of local modules.
@@ -55,7 +56,7 @@ function processEnv() {
 * @note Lookds for aat_local_modules_path env var
 */
 function hijackRequire() {
-  console.log(`Using Adapt modules in ${path.resolve(process.env.aat_local_modules_path)}`);
+  console.log(`Using Adapt modules in ${path.resolve(env.aat_local_modules_path)}`);
   // keep track of any failed requires, so we only log the problem once
   const failedRequires = [];
   const __require = Module.prototype.require;
@@ -78,7 +79,7 @@ function hijackRequire() {
         if(modPath.search(`^${path.basename(process.cwd())}${path.sep}`) > -1) isRoot = true;
       }
       try {
-        return __require.call(this, path.resolve(path.join(process.env.aat_local_modules_path, modPath)));
+        return __require.call(this, path.resolve(path.join(env.aat_local_modules_path, modPath)));
       } catch(e) {
         if(isRoot) {
           try {
