@@ -4,10 +4,19 @@ const path = require('path');
 
 const { input, command } = getInput();
 const options = getOptions();
+
+process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
 const env = process.env;
 
-processEnv();
-if(env.NODE_ENV === 'dev' && env.aat_local_modules_path) {
+console.log(`\nRunning the application with '${env.NODE_ENV}' environment`);
+
+let local_modules_path;
+try {
+  local_modules_path = require(`../conf/${env.NODE_ENV}.json`).app.local_modules_path;
+} catch(e) {
+  // do nothing
+}
+if(env.NODE_ENV === 'dev' && local_modules_path) {
   hijackRequire();
 }
 loadScript();
@@ -36,27 +45,12 @@ function getOptions() {
   return o;
 }
 /**
-* Makes sure the NODE_ENV is set, and any options are stored in the process.env with an aat_ prefix
-*/
-function processEnv() {
-  process.env.NODE_ENV = env.NODE_ENV || 'dev';
-  // try to load any local env variables
-  try {
-    Object.entries(require(`../.${env.NODE_ENV}.json`)).forEach(([key,val]) => options[key] = val);
-  } catch(e) {
-    if(e.code !== 'MODULE_NOT_FOUND') console.log(`Failed to load ${path.resolve(`../.${env.NODE_ENV}.json`)}: ${e}`);
-  }
-  Object.entries(options).forEach(([key,val]) => process.env[`aat_${key}`] = val);
-
-  console.log(`Running the application with '${env.NODE_ENV}' environment`);
-}
-/**
 * Hijacks the require function to allow use of local modules.
 * @note Only applies to modules prefixed 'adapt-authoring'
-* @note Lookds for aat_local_modules_path env var
+* @note Looks for app.local_modules_path config value
 */
 function hijackRequire() {
-  console.log(`Using Adapt modules in ${path.resolve(env.aat_local_modules_path)}`);
+  console.log(`Using Adapt modules in ${path.resolve(local_modules_path)}`);
   // keep track of any failed requires, so we only log the problem once
   const failedRequires = [];
   const __require = Module.prototype.require;
@@ -82,7 +76,7 @@ function hijackRequire() {
         if(modPath.search(`^${path.basename(process.cwd())}${path.sep}`) > -1) isRoot = true;
       }
       try {
-        return __require.call(this, path.resolve(path.join(env.aat_local_modules_path, modPath)));
+        return __require.call(this, path.resolve(path.join(local_modules_path, modPath)));
       } catch(e) {
         switch(e.name) {
           case 'SyntaxError':
