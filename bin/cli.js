@@ -88,7 +88,9 @@ function hijackRequire() {
           case 'SyntaxError':
           case 'TypeError':
             console.trace(e);
-            process.exit(1);
+            return process.exit(1);
+          case 'Error':
+            break;
           default:
             console.log(e.name);
         }
@@ -97,7 +99,6 @@ function hijackRequire() {
             return __require.call(this, path.resolve(process.cwd(), '..', modPath));
           } catch(e) {}
         }
-        console.log(`Failed to load local '${modPath}', ${e.message}, using standard require behaviour`);
         failedRequires.push(modPath);
       }
     }
