@@ -67,15 +67,18 @@ function hijackRequire() {
       let isRoot = false;
 
       if(parts.length > 1) {
-        const file = parts.pop();
+        const file = path.basename(modPath);
         let i = 0, m;
         parts.reverse().forEach(p => {
+          if(p === file) {
+            return i++;
+          }
           if(!m) {
             if(p.search(/^adapt-authoring/) > -1) m = p;
             i++;
           }
         });
-        modPath = path.join(...parts.reverse().slice(i*-1), file);
+        modPath = path.join(...parts.reverse().slice(i*-1));
         if(modPath.search(`^${path.basename(process.cwd())}${path.sep}`) > -1) isRoot = true;
       }
       try {
