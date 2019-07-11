@@ -29,6 +29,7 @@
     "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git",
     "adapt-authoring-courses": "git+https://github.com/taylortom/adapt-authoring-courses.git",
     "adapt-authoring-helloworld": "git+https://github.com/taylortom/adapt-authoring-helloworld.git",
+    "adapt-authoring-l10n": "git+https://github.com/taylortom/adapt-authoring-l10n.git",
     "adapt-authoring-logger": "git+https://github.com/taylortom/adapt-authoring-logger.git",
     "adapt-authoring-middleware": "git+https://github.com/taylortom/adapt-authoring-mongodb.git",
     "adapt-authoring-mongodb": "git+https://github.com/taylortom/adapt-authoring-mongodb.git",
