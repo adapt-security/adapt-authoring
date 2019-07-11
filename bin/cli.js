@@ -107,7 +107,7 @@ function loadScript() {
   try {
     require(`./${command}`);
   } catch(e) {
-    console.log(e);
+    console.trace(e);
     console.log(`Unknown command '${command}', use the -h flag for help`);
   }
 }
