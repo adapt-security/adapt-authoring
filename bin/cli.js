@@ -4,11 +4,10 @@ const path = require('path');
 
 const { input, command } = getInput();
 const options = getOptions();
-
-process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
 const env = process.env;
 
-console.log(`\nRunning the application with '${env.NODE_ENV}' environment`);
+processEnv();
+
 const confPath = path.resolve(process.cwd(), `conf`, `${env.NODE_ENV}.json`);
 let local_modules_path;
 try {
@@ -45,6 +44,14 @@ function getOptions() {
     o[option] = value || true;
   });
   return o;
+}
+/**
+* Makes sure the NODE_ENV is set, and any options are stored in the process.env with an aat_ prefix
+*/
+function processEnv() {
+  process.env.NODE_ENV = env.NODE_ENV || 'dev';
+  Object.entries(options).forEach(([key,val]) => process.env[`aat_${key}`] = val);
+  console.log(`Running the application with '${env.NODE_ENV}' environment`);
 }
 /**
 * Hijacks the require function to allow use of local modules.
