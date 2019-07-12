@@ -8,7 +8,7 @@ const env = process.env;
 
 processEnv();
 
-const confPath = path.resolve(process.cwd(), `conf`, `${env.NODE_ENV}.json`);
+const confPath = path.resolve(process.cwd(), `conf`, `${env.NODE_ENV}.config.js`);
 let local_modules_path;
 try {
   const conf = require(confPath);
