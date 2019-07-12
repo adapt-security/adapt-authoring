@@ -9,12 +9,14 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
 const env = process.env;
 
 console.log(`\nRunning the application with '${env.NODE_ENV}' environment`);
-
+const confPath = path.resolve(process.cwd(), `conf`, `${env.NODE_ENV}.json`);
 let local_modules_path;
 try {
-  local_modules_path = require(`../conf/${env.NODE_ENV}.json`).app.local_modules_path;
+  const conf = require(confPath);
+  local_modules_path = conf && conf.app && conf.app.local_modules_path;
 } catch(e) {
-  // do nothing
+  console.log(`\nFailed to load config file at ${e.message.replace(process.cwd(), '')}\n`);
+  process.exit(1);
 }
 if(env.NODE_ENV === 'dev' && local_modules_path) {
   hijackRequire();
