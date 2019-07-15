@@ -94,7 +94,7 @@ function hijackRequire() {
             console.trace(e);
             return process.exit(1);
           case 'Error':
-            break;
+            if(e.code === 'MODULE_NOT_FOUND') break;
           default:
             console.log(`cli.js => ${e.name}`);
         }
