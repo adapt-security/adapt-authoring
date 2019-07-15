@@ -96,7 +96,7 @@ function hijackRequire() {
           case 'Error':
             break;
           default:
-            console.log(e.name);
+            console.log(`cli.js => ${e.name}`);
         }
         if(isRoot) {
           try {
