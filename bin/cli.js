@@ -88,6 +88,7 @@ function hijackRequire() {
         return __require.call(this, path.resolve(path.join(local_modules_path, modPath)));
       } catch(e) {
         switch(e.name) {
+          case 'ReferenceError':
           case 'SyntaxError':
           case 'TypeError':
             console.trace(e);
