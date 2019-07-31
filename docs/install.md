@@ -36,49 +36,9 @@ npm link
 ```
 
 ## 4. Configure local settings
-You now need to configure your install to make sure the application uses the settings relevant to your machine (at this stage in the prototype, these settings are largely linked to your local MongoDB install).
+You now need to configure your install to make sure the application uses the settings relevant to your machine.
 
-There are two ways to do this:
-- Pass the required options as command-line parameters when starting the application
-- Create an environment configuration file and load this by specifying the correct `NODE_ENV` value when starting the application
-
-See the table below for a list of the available environment options:
-
-| Option | Environment | Description |
-| ------ | ----------- | ----------- |
-| `local_modules_path` | `dev` | Allows the use of local Adapt modules (rather than using those found in `/node_modules`). Handy during development. |
-| `server_host` | all | URL that the application will be accessible from |
-| `server_port` | all | Port that the application should use to listen for connections. |
-| `db_host` | all | Hostname for the database. |
-| `db_port` | all | Port for the database. |
-| `db_name` | all | Name of the MongoDB database to use for storing data. |
-
-### Command-line parameters
-Passing CLI options is as simple as this:
-```
-adaptat start --db_host=localhost --db_port=5000 --db_name=adapt-db
-```
-
-### Environment file
-
-Each environment file must be placed in the root project folder (i.e. `adapt-authoring`), in JSON format, prefixed with a `.` and named according to the environment (e.g. `.dev.json`, `.prod.json` etc.)
-
-By default it is assumed that the current environment is `dev`, but if you want to run the application in another environment, set the `NODE_ENV` environment variable when running the application:
-```
-NODE_ENV=prod adaptat start
-```
-
-Example `.dev.json` configuration:
-```
-{
-  "local_modules_path": "/adapt-authoring-modules",
-  "server_host": "http://localhost",
-  "server_port": 5000,
-  "db_host": "localhost",
-  "db_port": 27017,
-  "db_name": "adapt-authoring-prototype"
-}
-```
+For information on configuring the application, see [this page](manual/temp-configuration.html).
 
 ## *4a. Install local module dependencies (optional)*
-If using the `local_modules_path` option, you'll also need to make sure you've install the local dependencies for each of your local modules (i.e. run `npm install` for each module in `local_modules_path`).
+If using the `local_modules_path` option, you'll also need to make sure you've installed the local dependencies for each of your local modules (i.e. run `npm install` for each module in `local_modules_path`).
