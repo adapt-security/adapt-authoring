@@ -41,7 +41,8 @@
     "adapt-authoring-users": "git+https://github.com/taylortom/adapt-authoring-users.git"
   },
   "devDependencies": {
-    "adapt-authoring-docs": "git+https://github.com/taylortom/adapt-authoring-docs.git"
+    "adapt-authoring-docs": "git+https://github.com/taylortom/adapt-authoring-docs.git",
+    "adapt-authoring-testing": "git+https://github.com/taylortom/adapt-authoring-testing.git"
   },
   "engines": {
     "node": "10.x"
