@@ -17,7 +17,7 @@ try {
   console.log(`\nFailed to load config file at ${e.message.replace(process.cwd(), '')}\n`);
   process.exit(1);
 }
-if(env.NODE_ENV === 'dev' && local_modules_path) {
+if(local_modules_path) {
   hijackRequire();
 }
 loadScript();
