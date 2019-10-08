@@ -82,7 +82,7 @@ function hijackRequire() {
           }
         });
         modPath = path.join(...parts.reverse().slice(i*-1));
-        if(modPath.search(`^${path.basename(process.cwd())}${path.sep}`) > -1) isRoot = true;
+        if(modPath.search(`^${path.basename(process.cwd())}`) > -1) isRoot = true;
       }
       try {
         return __require.call(this, path.resolve(path.join(local_modules_path, modPath)));
