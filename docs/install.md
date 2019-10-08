@@ -38,7 +38,7 @@ npm link
 ## 4. Configure local settings
 You now need to configure your install to make sure the application uses the settings relevant to your machine.
 
-For information on configuring the application, see [this page](manual/temp-configuration.html).
+For information on configuring the application, see [this page](temp-configuration.html).
 
 ## *4a. Install local module dependencies (optional)*
 If using the `local_modules_path` option, you'll also need to make sure you've installed the local dependencies for each of your local modules (i.e. run `npm install` for each module in `local_modules_path`).
