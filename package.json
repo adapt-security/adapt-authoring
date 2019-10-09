@@ -2,17 +2,14 @@
   "name": "adapt-authoring",
   "version": "0.11.0",
   "description": "A server-based user interface for authoring eLearning courses using the Adapt Framework.",
-  "homepage": "https://github.com/taylortom/adapt-authoring",
+  "homepage": "https://github.com/adapt-security/adapt-authoring",
   "license": "GPL-3.0",
   "bin": {
     "adaptat": "./bin/cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taylortom/adapt-authoring.git"
-  },
-  "scripts": {
-    "debug": "DEBUG=true node --inspect-brk ./bin/cli.js start"
+    "url": "https://github.com/adapt-security/adapt-authoring.git"
   },
   "adapt_authoring": {
     "documentation": {
@@ -20,9 +17,9 @@
       "includes": {
         "docs": "docs/*"
       }
-    }
+    },
+    "framework": "5",
   },
-  "framework": "4",
   "dependencies": {
     "adapt-authoring-api": "git+https://github.com/adapt-security/adapt-authoring-api.git",
     "adapt-authoring-config": "git+https://github.com/adapt-security/adapt-authoring-config.git",
