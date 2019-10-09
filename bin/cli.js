@@ -13,10 +13,8 @@ let local_modules_path;
 try {
   const conf = require(confPath);
   local_modules_path = conf && conf.app && conf.app.local_modules_path;
-} catch(e) {
-  console.log(`\nFailed to load config file at ${e.message.replace(process.cwd(), '')}\n`);
-  process.exit(1);
-}
+} catch(e) {} // no config, but no problem
+
 if(local_modules_path) {
   hijackRequire();
 }
