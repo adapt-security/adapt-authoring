@@ -24,17 +24,17 @@
   },
   "framework": "4",
   "dependencies": {
-    "adapt-authoring-api": "git+https://github.com/taylortom/adapt-authoring-api.git",
-    "adapt-authoring-config": "git+https://github.com/taylortom/adapt-authoring-config.git",
-    "adapt-authoring-core": "git+https://github.com/taylortom/adapt-authoring-core.git",
-    "adapt-authoring-lang": "git+https://github.com/taylortom/adapt-authoring-lang.git",
-    "adapt-authoring-logger": "git+https://github.com/taylortom/adapt-authoring-logger.git",
-    "adapt-authoring-mongodb": "git+https://github.com/taylortom/adapt-authoring-mongodb.git",
-    "adapt-authoring-server": "git+https://github.com/taylortom/adapt-authoring-server.git"
+    "adapt-authoring-api": "git+https://github.com/adapt-security/adapt-authoring-api.git",
+    "adapt-authoring-config": "git+https://github.com/adapt-security/adapt-authoring-config.git",
+    "adapt-authoring-core": "git+https://github.com/adapt-security/adapt-authoring-core.git",
+    "adapt-authoring-lang": "git+https://github.com/adapt-security/adapt-authoring-lang.git",
+    "adapt-authoring-logger": "git+https://github.com/adapt-security/adapt-authoring-logger.git",
+    "adapt-authoring-mongodb": "git+https://github.com/adapt-security/adapt-authoring-mongodb.git",
+    "adapt-authoring-server": "git+https://github.com/adapt-security/adapt-authoring-server.git"
   },
   "devDependencies": {
-    "adapt-authoring-docs": "git+https://github.com/taylortom/adapt-authoring-docs.git",
-    "adapt-authoring-testing": "git+https://github.com/taylortom/adapt-authoring-testing.git"
+    "adapt-authoring-docs": "git+https://github.com/adapt-security/adapt-authoring-docs.git",
+    "adapt-authoring-testing": "git+https://github.com/adapt-security/adapt-authoring-testing.git"
   },
   "engines": {
     "node": "12.x"
