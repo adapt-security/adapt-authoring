@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "adapt-authoring-api": "git+https://github.com/adapt-security/adapt-authoring-api.git",
+    "adapt-authoring-auth": "git+https://github.com/taylortom/adapt-authoring-auth.git",
     "adapt-authoring-config": "git+https://github.com/adapt-security/adapt-authoring-config.git",
     "adapt-authoring-core": "git+https://github.com/adapt-security/adapt-authoring-core.git",
     "adapt-authoring-lang": "git+https://github.com/adapt-security/adapt-authoring-lang.git",
