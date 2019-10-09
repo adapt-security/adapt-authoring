@@ -18,7 +18,7 @@
         "docs": "docs/*"
       }
     },
-    "framework": "5",
+    "framework": "5"
   },
   "dependencies": {
     "adapt-authoring-api": "git+https://github.com/adapt-security/adapt-authoring-api.git",
