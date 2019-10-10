@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "adapt-authoring-docs": "git+https://github.com/adapt-security/adapt-authoring-docs.git",
+    "adapt-authoring-lint": "git+https://github.com/adapt-security/adapt-authoring-lint.git",
     "adapt-authoring-testing": "git+https://github.com/adapt-security/adapt-authoring-testing.git"
   },
   "engines": {
