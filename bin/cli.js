@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const Module = require('module');
+const { Module } = require('module');
 const path = require('path');
 
 const { input, command } = getInput();
@@ -7,17 +7,6 @@ const options = getOptions();
 const env = process.env;
 
 processEnv();
-
-const confPath = path.resolve(process.cwd(), `conf`, `${env.NODE_ENV}.config.js`);
-let local_modules_path;
-try {
-  const conf = require(confPath);
-  local_modules_path = conf && conf.app && conf.app.local_modules_path;
-} catch(e) {} // no config, but no problem
-
-if(local_modules_path) {
-  hijackRequire();
-}
 loadScript();
 /**
 * Sorts the input, extracts the command
@@ -48,64 +37,28 @@ function getOptions() {
 */
 function processEnv() {
   process.env.NODE_ENV = env.NODE_ENV || 'dev';
-  Object.entries(options).forEach(([key,val]) => process.env[`aat_${key}`] = val);
   console.log(`Running the application with '${env.NODE_ENV}' environment`);
+  Object.entries(options).forEach(([key,val]) => process.env[`aat_${key}`] = val);
+  modifyModulePaths();
 }
-/**
-* Hijacks the require function to allow use of local modules.
-* @note Only applies to modules prefixed 'adapt-authoring'
-* @note Looks for app.local_modules_path config value
-*/
-function hijackRequire() {
-  console.log(`Using Adapt modules in ${path.resolve(local_modules_path)}`);
-  // keep track of any failed requires, so we only log the problem once
-  const failedRequires = [];
-  const __require = Module.prototype.require;
-  // Hijack the standard require function
-  Module.prototype.require = function(modPath) {
-    if(modPath.includes('adapt-authoring') && !failedRequires.includes(modPath)) {
-      const parts = modPath.split(path.sep);
-      let isRoot = false;
 
-      if(parts.length > 1) {
-        const file = path.basename(modPath);
-        let i = 0, m;
-        parts.reverse().forEach(p => {
-          if(p === file) {
-            return i++;
-          }
-          if(!m) {
-            if(p.search(/^adapt-authoring/) > -1) m = p;
-            i++;
-          }
-        });
-        modPath = path.join(...parts.reverse().slice(i*-1));
-        if(modPath.search(`^${path.basename(process.cwd())}`) > -1) isRoot = true;
-      }
-      try {
-        return __require.call(this, path.resolve(path.join(local_modules_path, modPath)));
-      } catch(e) {
-        switch(e.name) {
-          case 'ReferenceError':
-          case 'SyntaxError':
-          case 'TypeError':
-            console.trace(e);
-            return process.exit(1);
-          case 'Error':
-            if(e.code === 'MODULE_NOT_FOUND') break;
-          default:
-            console.log(`cli.js => ${e.name}`);
-        }
-        if(isRoot) {
-          try {
-            return __require.call(this, path.resolve(process.cwd(), '..', modPath));
-          } catch(e) {}
-        }
-        failedRequires.push(modPath);
-      }
-    }
-    return __require.apply(this, arguments);
-  };
+function modifyModulePaths() {
+  const confPath = path.resolve(process.cwd(), `conf`, `${env.NODE_ENV}.config.js`);
+  let local_modules_path;
+  try {
+    const conf = require(confPath);
+    local_modules_path = path.resolve(conf.app.local_modules_path);
+  } catch(e) { // no config, but no problem
+    return;
+  }
+  if(!process.env.NODE_PATH) {
+    process.env.NODE_PATH = local_modules_path;
+  } else {
+    process.env.NODE_PATH += `${process.platform === 'win32' ? ';' : ':'}${local_modules_path}`;
+  }
+  // @hack
+  Module._initPaths();
+  console.log(`Using Adapt modules in ${local_modules_path}`);
 }
 /**
 * Tries to load the relevant script
