@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const { Module } = require('module');
+const moduleAlias = require('module-alias');
 const path = require('path');
 
 const { input, command } = getInput();
@@ -43,22 +43,12 @@ function processEnv() {
 }
 
 function modifyModulePaths() {
-  const confPath = path.resolve(process.cwd(), `conf`, `${env.NODE_ENV}.config.js`);
-  let local_modules_path;
   try {
-    const conf = require(confPath);
-    local_modules_path = path.resolve(conf.app.local_modules_path);
-  } catch(e) { // no config, but no problem
-    return;
-  }
-  if(!process.env.NODE_PATH) {
-    process.env.NODE_PATH = local_modules_path;
-  } else {
-    process.env.NODE_PATH += `${process.platform === 'win32' ? ';' : ':'}${local_modules_path}`;
-  }
-  // @hack
-  Module._initPaths();
-  console.log(`Using Adapt modules in ${local_modules_path}`);
+    const conf = require(path.resolve(process.cwd(), `conf`, `${env.NODE_ENV}.config.js`));
+    const local_modules_path = path.resolve(conf.app.local_modules_path);
+    moduleAlias.addPath(local_modules_path);
+    console.log(`Using Adapt modules in ${local_modules_path}`);
+  } catch(e) {} // no config, but no problem
 }
 /**
 * Tries to load the relevant script
