@@ -47,6 +47,7 @@ function modifyModulePaths() {
     const conf = require(path.resolve(process.cwd(), `conf`, `${env.NODE_ENV}.config.js`));
     const local_modules_path = path.resolve(conf.app.local_modules_path);
     moduleAlias.addPath(local_modules_path);
+    moduleAlias.addPath(path.resolve(path.join(process.cwd(), 'node_modules')));
     console.log(`Using Adapt modules in ${local_modules_path}`);
   } catch(e) {} // no config, but no problem
 }
