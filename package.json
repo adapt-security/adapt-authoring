@@ -13,10 +13,7 @@
   },
   "adapt_authoring": {
     "documentation": {
-      "enable": true,
-      "includes": {
-        "docs": "docs/*"
-      }
+      "enable": true
     },
     "framework": "5"
   },
