@@ -24,6 +24,7 @@
     "adapt-authoring-core": "git+https://github.com/adapt-security/adapt-authoring-core.git",
     "adapt-authoring-lang": "git+https://github.com/adapt-security/adapt-authoring-lang.git",
     "adapt-authoring-logger": "git+https://github.com/adapt-security/adapt-authoring-logger.git",
+    "adapt-authoring-middleware": "git+https://github.com/taylortom/adapt-authoring-middleware.git",
     "adapt-authoring-mongodb": "git+https://github.com/adapt-security/adapt-authoring-mongodb.git",
     "adapt-authoring-server": "git+https://github.com/adapt-security/adapt-authoring-server.git"
   },
