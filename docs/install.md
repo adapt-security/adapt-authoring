@@ -5,7 +5,7 @@ The first step is to make sure you have the required prerequisites installed, an
 
 ```
 $ node --version
-v10.*
+v12.*
 
 $ git --version
 v2.*
