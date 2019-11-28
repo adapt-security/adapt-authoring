@@ -7,10 +7,7 @@
   "bin": {
     "adaptat": "./bin/cli.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/adapt-security/adapt-authoring.git"
-  },
+  "repository": "github:adapt-security/adapt-authoring",
   "adapt_authoring": {
     "documentation": {
       "enable": true
