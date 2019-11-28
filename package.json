@@ -15,21 +15,21 @@
     "framework": "5"
   },
   "dependencies": {
-    "adapt-authoring-api": "git+https://github.com/adapt-security/adapt-authoring-api.git",
-    "adapt-authoring-auth": "git+https://github.com/taylortom/adapt-authoring-auth.git",
-    "adapt-authoring-config": "git+https://github.com/adapt-security/adapt-authoring-config.git",
-    "adapt-authoring-core": "git+https://github.com/adapt-security/adapt-authoring-core.git",
-    "adapt-authoring-lang": "git+https://github.com/adapt-security/adapt-authoring-lang.git",
-    "adapt-authoring-logger": "git+https://github.com/adapt-security/adapt-authoring-logger.git",
-    "adapt-authoring-middleware": "git+https://github.com/taylortom/adapt-authoring-middleware.git",
-    "adapt-authoring-mongodb": "git+https://github.com/adapt-security/adapt-authoring-mongodb.git",
-    "adapt-authoring-server": "git+https://github.com/adapt-security/adapt-authoring-server.git"
+    "adapt-authoring-api": "github:adapt-security/adapt-authoring-api.git",
+    "adapt-authoring-auth": "github:taylortom/adapt-authoring-auth.git",
+    "adapt-authoring-config": "github:adapt-security/adapt-authoring-config.git",
+    "adapt-authoring-core": "github:adapt-security/adapt-authoring-core.git",
+    "adapt-authoring-jsonschema": "github:adapt-security/adapt-authoring-jsonschema.git",
+    "adapt-authoring-lang": "github:adapt-security/adapt-authoring-lang.git",
+    "adapt-authoring-logger": "github:adapt-security/adapt-authoring-logger.git",
+    "adapt-authoring-middleware": "github:adapt-security/adapt-authoring-middleware.git",
+    "adapt-authoring-mongodb": "github:adapt-security/adapt-authoring-mongodb.git",
+    "adapt-authoring-server": "github:adapt-security/adapt-authoring-server.git"
   },
   "devDependencies": {
-    "adapt-authoring-docs": "git+https://github.com/adapt-security/adapt-authoring-docs.git",
-    "adapt-authoring-lint": "git+https://github.com/adapt-security/adapt-authoring-lint.git",
-    "adapt-authoring-testing": "git+https://github.com/adapt-security/adapt-authoring-testing.git",
-    "module-alias": "2.2.2"
+    "adapt-authoring-docs": "github:adapt-security/adapt-authoring-docs",
+    "adapt-authoring-lint": "github:adapt-security/adapt-authoring-lint",
+    "adapt-authoring-testing": "github:adapt-security/adapt-authoring-testing"
   },
   "engines": {
     "node": "12.x"
