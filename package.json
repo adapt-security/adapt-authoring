@@ -4,15 +4,20 @@
   "description": "A server-based user interface for authoring eLearning courses using the Adapt Framework.",
   "homepage": "https://github.com/adapt-security/adapt-authoring",
   "license": "GPL-3.0",
-  "bin": {
-    "adaptat": "./bin/cli.js"
-  },
   "repository": "github:adapt-security/adapt-authoring",
   "adapt_authoring": {
     "documentation": {
       "enable": true
     },
     "framework": "5"
+  },
+  "scripts": {
+    "debug": "node --inspect-brk bin/cli debug",
+    "docs": "node --inspect-brk bin/cli docs",
+    "generate-config": "node bin/cli generate-config",
+    "lint": "node bin/cli lint",
+    "start": "node bin/cli start",
+    "test": "node bin/cli test"
   },
   "dependencies": {
     "adapt-authoring-api": "github:adapt-security/adapt-authoring-api",
