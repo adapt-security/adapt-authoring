@@ -13,7 +13,7 @@
   },
   "scripts": {
     "debug": "node --inspect-brk bin/cli debug",
-    "docs": "node --inspect-brk bin/cli docs",
+    "docs": "node bin/cli docs",
     "generate-config": "node bin/cli generate-config",
     "lint": "node bin/cli lint",
     "start": "node bin/cli start",
