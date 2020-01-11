@@ -1,0 +1,8 @@
+{
+  "module": false,
+  "documentation": {
+    "enable": true
+  },
+  "requiredCoreApis": ["config", "jsonschema", "lang", "logger"],
+  "framework": "5"
+}

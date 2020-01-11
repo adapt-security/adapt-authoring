@@ -5,12 +5,6 @@
   "homepage": "https://github.com/adapt-security/adapt-authoring",
   "license": "GPL-3.0",
   "repository": "github:adapt-security/adapt-authoring",
-  "adapt_authoring": {
-    "documentation": {
-      "enable": true
-    },
-    "framework": "5"
-  },
   "scripts": {
     "debug": "node --inspect-brk bin/cli debug",
     "docs": "node bin/cli docs",
