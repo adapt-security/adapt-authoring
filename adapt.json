@@ -3,6 +3,11 @@
   "documentation": {
     "enable": true
   },
-  "requiredCoreApis": ["config", "jsonschema", "lang", "logger"],
+  "essentialApis": [
+    "config",
+    "jsonschema",
+    "lang",
+    "logger"
+  ],
   "framework": "5"
 }
