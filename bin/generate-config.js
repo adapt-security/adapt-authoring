@@ -4,6 +4,7 @@ const path = require('path');
 const ConfigUtils = require('adapt-authoring-config').Utils;
 
 const NODE_ENV = process.env.NODE_ENV;
+const useDefaults = process.env.aat_defaults && process.env.aat_defaults.match(/true|y/);
 const confDir = path.resolve(path.join(process.cwd(), 'conf'));
 const outpath = path.join(confDir, `${NODE_ENV}.config.js`);
 const configJson = {};
@@ -44,7 +45,10 @@ async function processDeps() {
       return;
     }
     const generated = Object.entries(schema.properties).reduce((memo, [attr, config]) => {
-      memo[attr] = getValueForAttr(schema, attr);
+      config.required = schema.required && schema.required.includes(attr);
+      if(useDefaults || config.required) {
+        memo[attr] = getValueForAttr(attr, config);
+      }
       return memo;
     }, {});
     if(Object.keys(generated).length) {
@@ -54,11 +58,9 @@ async function processDeps() {
   await Promise.all(promises);
 }
 
-function getValueForAttr(schema, attr) {
-  const required = schema.required && schema.required.includes(attr);
-  if(required) return null;
-  const defaultVal = schema.properties[attr].default;
-  if(defaultVal) return defaultVal;
+function getValueForAttr(attr, config) {
+  if(config.required) return null;
+  if(config.default) return config.default;
 }
 
 init();
