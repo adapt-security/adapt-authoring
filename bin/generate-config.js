@@ -1,4 +1,4 @@
-const { App, Utils } = require('adapt-authoring-core');
+const { Utils } = require('adapt-authoring-core');
 const fs = require('fs-extra');
 const path = require('path');
 const ConfigUtils = require('adapt-authoring-config').Utils;
@@ -30,10 +30,10 @@ async function init() {
 
 function getDeps() {
   try {
-    const appPkg = require(path.join(process.cwd(), 'package.json'));
+    const appPkg = Utils.requirePackage();
     return Object.keys({ ...appPkg.dependencies, ...appPkg.devDependencies });
   } catch(e) {
-    console.log('Failed to load package.json', e);
+    console.log(`Failed to load package`, e);
   }
 }
 
