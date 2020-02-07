@@ -5,7 +5,6 @@
   },
   "essentialApis": [
     "config",
-    "jsonschema",
     "lang",
     "logger"
   ],
