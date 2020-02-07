@@ -6,7 +6,7 @@
   "license": "GPL-3.0",
   "repository": "github:adapt-security/adapt-authoring",
   "scripts": {
-    "debug": "node --inspect-brk bin/cli debug",
+    "debug": "node --inspect bin/cli start",
     "docs": "node bin/cli docs",
     "generate-config": "node bin/cli generate-config",
     "lint": "node bin/cli lint",
