@@ -11,7 +11,7 @@
     "generate-config": "node bin/cli generate-config",
     "lint": "node bin/cli lint",
     "start": "node bin/cli start",
-    "test": "node bin/cli test"
+    "tests": "node bin/cli tests"
   },
   "dependencies": {
     "adapt-authoring-api": "github:adapt-security/adapt-authoring-api",
