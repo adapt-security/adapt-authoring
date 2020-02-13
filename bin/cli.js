@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-const path = require('path');
-
 const { input, command } = getInput();
 const options = getOptions();
 const env = process.env;
@@ -38,12 +36,6 @@ function processEnv() {
   process.env.NODE_ENV = env.NODE_ENV || 'dev';
   console.log(`Running the application with '${env.NODE_ENV}' environment`);
   Object.entries(options).forEach(([key,val]) => process.env[`aat_${key}`] = val);
-  modifyModulePaths();
-}
-
-function modifyModulePaths() {
-  try {
-  } catch(e) {} // no config, but no problem
 }
 /**
 * Tries to load the relevant script
