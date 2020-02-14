@@ -7,6 +7,7 @@
   "repository": "github:adapt-security/adapt-authoring",
   "scripts": {
     "debug": "node --inspect bin/cli start",
+    "debug-brk": "node --inspect-brk bin/cli start",
     "docs": "node bin/cli docs",
     "generate-config": "node bin/cli generate-config",
     "lint": "node bin/cli lint",
