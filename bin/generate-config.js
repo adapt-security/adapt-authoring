@@ -28,9 +28,9 @@ async function init() {
   }
 }
 
-function getDeps() {
+async function getDeps() {
   try {
-    const appPkg = Utils.requirePackage();
+    const appPkg = await Utils.requirePackage();
     return Object.keys({ ...appPkg.dependencies, ...appPkg.devDependencies });
   } catch(e) {
     console.log(`Failed to load package`, e);
@@ -38,7 +38,7 @@ function getDeps() {
 }
 
 async function processDeps() {
-  const deps = getDeps();
+  const deps = await getDeps();
   const promises = deps.map(async d => {
     const schema = await ConfigUtils.loadConfigSchema(Utils.getModuleDir(d));
     if(!schema) {
