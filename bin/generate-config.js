@@ -31,7 +31,7 @@ async function init() {
 async function getDeps() {
   try {
     const appPkg = await Utils.requirePackage();
-    return Object.keys({ ...appPkg.dependencies, ...appPkg.devDependencies });
+    return Object.keys({ ...appPkg.dependencies, ...appPkg.devDependencies }).sort();
   } catch(e) {
     console.log(`Failed to load package`, e);
   }
