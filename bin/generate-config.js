@@ -51,9 +51,11 @@ async function processDeps() {
       }
       return memo;
     }, {});
-    if(Object.keys(generated).length) {
-      configJson[d] = Object.assign({}, configJson[d], generated);
-    }
+    Object.entries(generated).reduce((m,[k,v]) => {
+      if(!m[d]) m[d] = { [k]: v };
+      else if(!m[d].hasOwnProperty(k)) m[d][k] = v;
+      return m;
+    }, configJson);
   });
   await Promise.all(promises);
 }
