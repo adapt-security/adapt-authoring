@@ -8,6 +8,8 @@
   "scripts": {
     "debug": "node --inspect bin/cli start",
     "debug-brk": "node --inspect-brk bin/cli start",
+    "dev": "node --preserve-symlinks bin/cli start",
+    "dev-init": "node bin/dev-init",
     "docs": "node bin/cli docs",
     "generate-config": "node bin/cli generate-config",
     "lint": "node bin/cli lint",
