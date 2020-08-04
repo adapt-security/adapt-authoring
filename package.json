@@ -6,8 +6,8 @@
   "license": "GPL-3.0",
   "repository": "github:adapt-security/adapt-authoring",
   "scripts": {
-    "debug": "node --inspect bin/cli start",
-    "debug-brk": "node --inspect-brk bin/cli start",
+    "debug": "node --inspect --preserve-symlinks bin/cli start",
+    "debug-brk": "node --inspect-brk --preserve-symlinks bin/cli start",
     "dev": "node --preserve-symlinks bin/cli start",
     "dev-init": "node bin/dev-init",
     "docs": "node bin/cli docs",
