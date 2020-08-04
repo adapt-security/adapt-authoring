@@ -1,11 +1,12 @@
 # Installation
+**Note**: you can find developer-specific instructions in `developer.md`.
 
 ## 1. Install prerequisites
 The first step is to make sure you have the required prerequisites installed, and at the correct version.
 
 ```
 $ node --version
-v12.*
+v14.*
 
 $ git --version
 v2.*
@@ -17,7 +18,7 @@ db version v3+
 ## 2. Clone the repo
 The next step is to get your hands on the code. The best way to do this is via git:
 ```
-git clone https://github.com/taylortom/adapt-authoring
+git clone https://github.com/adaptlearning/adapt-authoring
 cd adapt-authoring
 ```
 
@@ -26,19 +27,17 @@ Now, you need to install the app's module dependencies, which are managed by NPM
 ```
 npm install
 ```
-
-## *3a. Link the bundled CLI (optional)*
-
-For ease of use, you can make the Adapt authoring tool's command line tools (CLI) available globally on your system (this lets you run commands like `adaptat start` rather than `node bin/cli start`).
-
-```
-npm link
-```
+_If you attempt to run the application now, you will encounter an error relating to missing configuration values._
 
 ## 4. Configure local settings
 You now need to configure your install to make sure the application uses the settings relevant to your machine.
 
-For information on configuring the application, see [this page](temp-configuration.html).
+**Tip**: if you'd like a fully populated config file (including all default values), you can run:
+```
+NODE_ENV=production npm run generate-config
+```
+The value specified for `NODE_ENV` signifies which environment the config will apply to.
 
-## *4a. Install local module dependencies (optional)*
-If using the `local_modules_path` option, you'll also need to make sure you've installed the local dependencies for each of your local modules (i.e. run `npm install` for each module in `local_modules_path`).
+Once this has run, you will notice a new file has been generated in `conf/` (e.g. `production.config.js` in the above example). If you open this file, you will see all expected values already populated in the file. **You will need to set any attributes with the value `undefined`.**
+
+For full information on configuring the application, see [this page](temp-configuration.html).

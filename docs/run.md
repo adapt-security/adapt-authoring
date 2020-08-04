@@ -1,14 +1,12 @@
 # Running the application
+**Note**: you can find developer-specific instructions in `developer.md`.
 
-## Available commands
-| Command | Arguments | Description |
-| ------- | --------- | ----------- |
-| start |  | Starts the application. |
-| docs | `open`: opens the docs in a browser | Generates the documentation. |
-
-
-### Example usage
+To run the application, simply use the npm start script:
 ```
-adaptat start
-adaptat docs --open
+npm start
+```
+
+You can also set the NODE_ENV environment variable to specify which configuration file is loaded with the application. This value is `dev` by default:
+```
+NODE_ENV=production npm start
 ```
