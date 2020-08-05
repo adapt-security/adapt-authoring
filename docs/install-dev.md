@@ -7,7 +7,7 @@ To avoid unnecessarily high stress levels, we strongly advise you make use of [`
 To do this, you'll need to do the following for each module you have locally:
 1. Clone as usual via git
 2. Run `npm link` to make the module available globally (run in each module's source folder)
-3. Run `npm link MODULE_NAME` to install a symlink in your adapt-`authoring` installation
+3. Run `npm link MODULE_NAME` to install a symlink in your `adapt-authoring` installation
 3. _ALTERNATIVE_ The included `dev-init` npm task goes one step further than the default `npm link` behaviour, and automatically runs `npm link MODULE_NAME` for all modules listed in the adapt-authoring dependencies. To use this, you simply need to run `npm run dev-init` from your root `adapt-authoring` folder. **Note: this script will need to be re-run each time you run a full `npm install`.**
 
 ### Important note
