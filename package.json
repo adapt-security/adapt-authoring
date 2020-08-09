@@ -34,6 +34,6 @@
     "adapt-authoring-testing": "github:adapt-security/adapt-authoring-testing"
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   }
 }
