@@ -9,7 +9,7 @@
     "debug": "node --inspect --preserve-symlinks bin/cli start",
     "debug-brk": "node --inspect-brk --preserve-symlinks bin/cli start",
     "dev": "node --preserve-symlinks bin/cli start",
-    "dev-init": "node bin/dev-init",
+    "dev-init": "node bin/cli dev-init",
     "docs": "node bin/cli docs",
     "generate-config": "node bin/cli generate-config",
     "lint": "node bin/cli lint",
