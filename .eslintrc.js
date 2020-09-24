@@ -63,20 +63,20 @@ module.exports = {
     "func-call-spacing": ERROR,
     "indent": [ERROR, 2, { SwitchCase: 1 }],
     "lines-around-comment": [WARN, {
-      beforeBlockComment: false,
-      afterBlockComment: false,
-      beforeLineComment: false,
-      afterLineComment: false,
+      "beforeBlockComment": false,
+      "afterBlockComment": false,
+      "beforeLineComment": false,
+      "afterLineComment": false,
     }],
     "lines-between-class-members": [WARN, "never"],
     "max-len": [ERROR, {
-      code: 120,
-      ignoreComments: true,
-      ignoreTrailingComments: true,
-      ignoreUrls: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-      ignoreRegExpLiterals: true
+      "code": 120,
+      "ignoreComments": true,
+      "ignoreTrailingComments": true,
+      "ignoreUrls": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreRegExpLiterals": true
     }],
     "max-lines": [WARN, { max: 500 }],
     "max-statements": [WARN, { max: 25 }], // ???
