@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint no-console: 0 */
 const { input, command } = getInput();
 const options = getOptions();
 const env = process.env;
@@ -6,8 +7,8 @@ const env = process.env;
 processEnv();
 loadScript();
 /**
-* Sorts the input, extracts the command
-*/
+ * Sorts the input, extracts the command
+ */
 function getInput() {
   const input = process.argv.slice(2).sort((a,b) => {
     if(a[0] !== '-') return -1;
@@ -16,10 +17,10 @@ function getInput() {
   return { input, command: input.shift() };
 }
 /*
-* Store any valid params
-* - Must be prefixed with --
-* - Can also have a value (i.e. --test=true)
-*/
+ * Store any valid params
+ * - Must be prefixed with --
+ * - Can also have a value (i.e. --test=true)
+ */
 function getOptions() {
   const o = {};
   input.forEach(i => {
@@ -30,16 +31,16 @@ function getOptions() {
   return o;
 }
 /**
-* Makes sure the NODE_ENV is set, and any options are stored in the process.env with an aat_ prefix
-*/
+ * Makes sure the NODE_ENV is set, and any options are stored in the process.env with an aat_ prefix
+ */
 function processEnv() {
   process.env.NODE_ENV = env.NODE_ENV || 'dev';
   console.log(`Running the application with '${env.NODE_ENV}' environment`);
   Object.entries(options).forEach(([key,val]) => process.env[`aat_${key}`] = val);
 }
 /**
-* Tries to load the relevant script
-*/
+ * Tries to load the relevant script
+ */
 function loadScript() {
   console.log();
   try {

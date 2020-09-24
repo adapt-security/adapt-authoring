@@ -1,3 +1,4 @@
+/* eslint no-console: 0 */
 const { exec } = require('child_process');
 const path = require('path');
 
