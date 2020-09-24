@@ -62,6 +62,16 @@ module.exports = {
     "brace-style": ERROR,
     "func-call-spacing": ERROR,
     "indent": [ERROR, 2, { SwitchCase: 1 }],
+    "keyword-spacing": [WARN, { 
+      "before": true, 
+      "after": true, 
+      "overrides": { 
+        "if": { "after": false },
+        "for": { "after": false },
+        "catch": { "after": false },
+        "switch": { "after": false }
+      } 
+    }],
     "lines-around-comment": [WARN, {
       "beforeBlockComment": false,
       "afterBlockComment": false,
@@ -80,6 +90,7 @@ module.exports = {
     }],
     "max-lines": [WARN, { max: 500 }],
     "max-statements": [WARN, { max: 25 }], // ???
+    "multiline-comment-style": WARN,
     "no-lonely-if": WARN,
     "no-mixed-spaces-and-tabs": ERROR,
     "no-multiple-empty-lines": ERROR,
@@ -88,6 +99,9 @@ module.exports = {
     "no-unneeded-ternary": WARN,
     "no-whitespace-before-property": ERROR,
     "semi": ERROR,
+    "space-before-blocks": [WARN, "always"],
+    "space-before-function-paren": [WARN, { "anonymous": "never", "named": "never", "asyncArrow": "always" }],
+    "space-in-parens": [WARN, "never"],
     // ES6
     "no-const-assign": ERROR,
     "no-dupe-class-members": ERROR,
