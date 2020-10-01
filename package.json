@@ -12,7 +12,7 @@
     "dev-init": "node bin/cli dev-init",
     "docs": "node --preserve-symlinks bin/cli docs",
     "generate-config": "node bin/cli generate-config",
-    "lint": "node bin/cli lint",
+    "lint": "node --preserve-symlinks bin/cli lint",
     "start": "node bin/cli start",
     "test": "node bin/cli test"
   },
