@@ -6,6 +6,7 @@
   "license": "GPL-3.0",
   "repository": "github:adapt-security/adapt-authoring",
   "scripts": {
+    "build": "cd node_modules/adapt-authoring-ui && node_modules/grunt/bin/grunt build:dev",
     "debug": "node --inspect --preserve-symlinks bin/cli start",
     "debug-brk": "node --inspect-brk --preserve-symlinks bin/cli start",
     "dev": "node --preserve-symlinks bin/cli start",
