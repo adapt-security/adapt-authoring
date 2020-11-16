@@ -24,6 +24,7 @@
     "adapt-authoring-authored": "github:adapt-security/adapt-authoring-authored",
     "adapt-authoring-config": "github:adapt-security/adapt-authoring-config",
     "adapt-authoring-core": "github:adapt-security/adapt-authoring-core",
+    "adapt-authoring-coursetheme": "github:adapt-security/adapt-authoring-coursetheme",
     "adapt-authoring-jsonschema": "github:adapt-security/adapt-authoring-jsonschema",
     "adapt-authoring-lang": "github:adapt-security/adapt-authoring-lang",
     "adapt-authoring-localauth": "github:adapt-security/adapt-authoring-localauth",
@@ -33,7 +34,10 @@
     "adapt-authoring-mongodb": "github:adapt-security/adapt-authoring-mongodb",
     "adapt-authoring-server": "github:adapt-security/adapt-authoring-server",
     "adapt-authoring-sessions": "github:adapt-security/adapt-authoring-sessions",
-    "adapt-authoring-tags": "github:adapt-security/adapt-authoring-tags"
+    "adapt-authoring-spoortracking": "github:adapt-security/adapt-authoring-spoortracking",
+    "adapt-authoring-tags": "github:adapt-security/adapt-authoring-tags",
+    "adapt-authoring-ui": "github:adapt-security/adapt-authoring-ui",
+    "adapt-authoring-usergroups": "github:adapt-security/adapt-authoring-usergroups"
   },
   "devDependencies": {
     "adapt-authoring-docs": "github:adapt-security/adapt-authoring-docs",
