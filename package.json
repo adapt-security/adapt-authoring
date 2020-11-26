@@ -33,6 +33,7 @@
     "adapt-authoring-mailer": "github:adapt-security/adapt-authoring-mailer",
     "adapt-authoring-middleware": "github:adapt-security/adapt-authoring-middleware",
     "adapt-authoring-mongodb": "github:adapt-security/adapt-authoring-mongodb",
+    "adapt-authoring-mongodblogger": "github:adapt-security/adapt-authoring-mongodblogger",
     "adapt-authoring-server": "github:adapt-security/adapt-authoring-server",
     "adapt-authoring-sessions": "github:adapt-security/adapt-authoring-sessions",
     "adapt-authoring-spoortracking": "github:adapt-security/adapt-authoring-spoortracking",
