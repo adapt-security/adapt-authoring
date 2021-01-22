@@ -24,8 +24,12 @@
     "adapt-authoring-auth": "github:adapt-security/adapt-authoring-auth",
     "adapt-authoring-authored": "github:adapt-security/adapt-authoring-authored",
     "adapt-authoring-config": "github:adapt-security/adapt-authoring-config",
+    "adapt-authoring-content": "github:adapt-security/adapt-authoring-content",
+    "adapt-authoring-contentplugin": "github:adapt-security/adapt-authoring-contentplugin",
     "adapt-authoring-core": "github:adapt-security/adapt-authoring-core",
+    "adapt-authoring-courseassets": "github:adapt-security/adapt-authoring-courseassets#events",
     "adapt-authoring-coursetheme": "github:adapt-security/adapt-authoring-coursetheme",
+    "adapt-authoring-defaultplugins": "github:adapt-security/adapt-authoring-defaultplugins",
     "adapt-authoring-jsonschema": "github:adapt-security/adapt-authoring-jsonschema",
     "adapt-authoring-lang": "github:adapt-security/adapt-authoring-lang",
     "adapt-authoring-localauth": "github:adapt-security/adapt-authoring-localauth",
@@ -34,12 +38,14 @@
     "adapt-authoring-middleware": "github:adapt-security/adapt-authoring-middleware",
     "adapt-authoring-mongodb": "github:adapt-security/adapt-authoring-mongodb",
     "adapt-authoring-mongodblogger": "github:adapt-security/adapt-authoring-mongodblogger",
+    "adapt-authoring-roles": "github:adapt-security/adapt-authoring-roles",
     "adapt-authoring-server": "github:adapt-security/adapt-authoring-server",
     "adapt-authoring-sessions": "github:adapt-security/adapt-authoring-sessions",
     "adapt-authoring-spoortracking": "github:adapt-security/adapt-authoring-spoortracking",
     "adapt-authoring-tags": "github:adapt-security/adapt-authoring-tags",
     "adapt-authoring-ui": "github:adapt-security/adapt-authoring-ui",
-    "adapt-authoring-usergroups": "github:adapt-security/adapt-authoring-usergroups"
+    "adapt-authoring-usergroups": "github:adapt-security/adapt-authoring-usergroups",
+    "adapt-authoring-users": "github:adapt-security/adapt-authoring-users"
   },
   "devDependencies": {
     "adapt-authoring-docs": "github:adapt-security/adapt-authoring-docs",
