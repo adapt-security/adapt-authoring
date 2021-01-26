@@ -24,8 +24,6 @@
     "adapt-authoring-auth": "github:adapt-security/adapt-authoring-auth",
     "adapt-authoring-authored": "github:adapt-security/adapt-authoring-authored",
     "adapt-authoring-config": "github:adapt-security/adapt-authoring-config",
-    "adapt-authoring-content": "github:adapt-security/adapt-authoring-content",
-    "adapt-authoring-contentplugin": "github:adapt-security/adapt-authoring-contentplugin",
     "adapt-authoring-core": "github:adapt-security/adapt-authoring-core",
     "adapt-authoring-courseassets": "github:adapt-security/adapt-authoring-courseassets#events",
     "adapt-authoring-coursetheme": "github:adapt-security/adapt-authoring-coursetheme",
