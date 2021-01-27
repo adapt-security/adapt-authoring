@@ -30,7 +30,7 @@
     "adapt-authoring-defaultplugins": "adapt-security/adapt-authoring-defaultplugins",
     "adapt-authoring-jsonschema": "adapt-security/adapt-authoring-jsonschema",
     "adapt-authoring-lang": "adapt-security/adapt-authoring-lang",
-    "adapt-authoring-lang-en": "github:taylortom/adapt-authoring-lang-en",
+    "adapt-authoring-lang-en": "taylortom/adapt-authoring-lang-en",
     "adapt-authoring-localauth": "adapt-security/adapt-authoring-localauth",
     "adapt-authoring-logger": "adapt-security/adapt-authoring-logger",
     "adapt-authoring-mailer": "adapt-security/adapt-authoring-mailer",
