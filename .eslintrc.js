@@ -62,15 +62,15 @@ module.exports = {
     "brace-style": ERROR,
     "func-call-spacing": ERROR,
     "indent": [ERROR, 2, { SwitchCase: 1 }],
-    "keyword-spacing": [WARN, { 
-      "before": true, 
-      "after": true, 
-      "overrides": { 
+    "keyword-spacing": [WARN, {
+      "before": true,
+      "after": true,
+      "overrides": {
         "if": { "after": false },
         "for": { "after": false },
         "catch": { "after": false },
         "switch": { "after": false }
-      } 
+      }
     }],
     "lines-around-comment": [WARN, {
       "beforeBlockComment": false,
