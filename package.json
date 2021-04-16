@@ -25,7 +25,7 @@
     "adapt-authoring-authored": "adapt-security/adapt-authoring-authored",
     "adapt-authoring-config": "adapt-security/adapt-authoring-config",
     "adapt-authoring-core": "adapt-security/adapt-authoring-core",
-    "adapt-authoring-courseassets": "adapt-security/adapt-authoring-courseassets#events",
+    "adapt-authoring-courseassets": "adapt-security/adapt-authoring-courseassets",
     "adapt-authoring-coursetheme": "adapt-security/adapt-authoring-coursetheme",
     "adapt-authoring-defaultplugins": "adapt-security/adapt-authoring-defaultplugins",
     "adapt-authoring-jsonschema": "adapt-security/adapt-authoring-jsonschema",
