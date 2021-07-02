@@ -1,2 +1,1 @@
-const Install = require('adapt-authoring-installer');
-Install();
+require('adapt-authoring-installer');
