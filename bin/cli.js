@@ -34,7 +34,7 @@ function getOptions() {
  * Makes sure the NODE_ENV is set, and any options are stored in the process.env with an aat_ prefix
  */
 function processEnv() {
-  process.env.NODE_ENV = env.NODE_ENV || 'dev';
+  process.env.NODE_ENV = env.NODE_ENV || 'production';
   console.log(`Running the application with '${env.NODE_ENV}' environment`);
   Object.entries(options).forEach(([key,val]) => process.env[`aat_${key}`] = val);
 }
