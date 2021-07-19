@@ -6,7 +6,7 @@ To run the application, simply use the npm start script:
 npm start
 ```
 
-You can also set the NODE_ENV environment variable to specify which configuration file is loaded with the application. This value is `dev` by default:
+You can also set the NODE_ENV environment variable to specify which configuration file is loaded with the application. This value is `production` by default:
 ```
-NODE_ENV=production npm start
+NODE_ENV=dev npm start
 ```
