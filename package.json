@@ -14,7 +14,6 @@
     "generate-config": "node bin/cli generate-config",
     "installer": "node bin/cli install",
     "lint": "node --preserve-symlinks bin/cli lint",
-    "register-user": "node bin/cli register-user",
     "start": "node bin/cli start",
     "test": "node bin/cli test"
   },
