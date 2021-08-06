@@ -40,7 +40,6 @@
     "adapt-authoring-sessions": "adapt-security/adapt-authoring-sessions",
     "adapt-authoring-tags": "adapt-security/adapt-authoring-tags",
     "adapt-authoring-ui": "adapt-security/adapt-authoring-ui",
-    "adapt-authoring-usergroups": "adapt-security/adapt-authoring-usergroups",
     "adapt-authoring-users": "adapt-security/adapt-authoring-users"
   },
   "devDependencies": {
