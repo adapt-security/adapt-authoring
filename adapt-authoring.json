@@ -1,7 +1,10 @@
 {
   "module": false,
   "documentation": {
-    "enable": true
+    "enable": true,
+    "manualSections": {
+      "run.md": "Getting started"
+    }
   },
   "essentialApis": [
     "config",
