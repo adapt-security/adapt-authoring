@@ -3,7 +3,7 @@
   "documentation": {
     "enable": true,
     "manualSections": {
-      "run.md": "Getting started"
+      "run.md": "getting-started"
     }
   },
   "essentialApis": [
