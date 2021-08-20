@@ -1,1 +1,0 @@
-require('adapt-authoring-installer');
