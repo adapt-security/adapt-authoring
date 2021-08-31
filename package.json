@@ -6,13 +6,10 @@
   "license": "GPL-3.0",
   "repository": "adapt-security/adapt-authoring",
   "scripts": {
-    "debug": "node --inspect --preserve-symlinks bin/cli start",
-    "debug-brk": "node --inspect-brk --preserve-symlinks bin/cli start",
-    "dev": "node --preserve-symlinks bin/cli start",
-    "dev-init": "node bin/cli dev-init",
-    "lint": "node --preserve-symlinks bin/cli lint",
-    "start": "node bin/cli start",
-    "test": "node bin/cli test"
+    "debug": "node --inspect --preserve-symlinks ./bin/start",
+    "dev": "node --preserve-symlinks ./bin/start",
+    "dev-init": "node ./bin/dev-init",
+    "start": "node ./bin/start"
   },
   "dependencies": {
     "adapt-authoring-adaptFramework": "adapt-security/adapt-authoring-adaptFramework",
@@ -41,7 +38,6 @@
   },
   "devDependencies": {
     "adapt-authoring-docs": "adapt-security/adapt-authoring-docs",
-    "adapt-authoring-lint": "adapt-security/adapt-authoring-lint",
     "adapt-authoring-testing": "adapt-security/adapt-authoring-testing"
   },
   "engines": {
