@@ -34,7 +34,7 @@ The authoring tool comes bundled with a user-friendly installer which will walk 
 ```
 npx adapt-security/adapt-authoring-installer install -p [DIRECTORY]
 ```
-> You will need to specify the folder that you want to install the authoring tool into. Replace `[DIRECTORY]` with the path to this folder.
+> If you don't pass the `[DIRECTORY]` param, the application will be installed in a new `adapt-authoring` folder in the current working directory.
 
 Once you run this command, the installer will automatically open in your default web browser, and guide you through the rest of the process.
 
