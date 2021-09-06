@@ -3,6 +3,8 @@
   "documentation": {
     "enable": true,
     "manualSections": {
+      "install.md": "getting-started",
+      "install-dev.md": "advanced",
       "run.md": "getting-started"
     }
   },
