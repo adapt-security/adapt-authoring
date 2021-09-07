@@ -6,7 +6,8 @@
     "manualSections": {
       "install.md": "getting-started",
       "install-dev.md": "advanced",
-      "run.md": "getting-started"
+      "run.md": "getting-started",
+      "update.md": "getting-started"
     }
   },
   "essentialApis": [
