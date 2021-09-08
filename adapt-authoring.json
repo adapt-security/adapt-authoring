@@ -6,6 +6,7 @@
     "manualSections": {
       "install.md": "getting-started",
       "install-dev.md": "advanced",
+      "releasing.md": "contributing",
       "run.md": "getting-started",
       "update.md": "getting-started"
     }
