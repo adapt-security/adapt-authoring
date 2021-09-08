@@ -21,7 +21,9 @@ You can confirm that you have the correct prerequisites installed by executing t
 If any of these return errors, or the installed versions don't match the requirements above, please look up the relevant documentation for installing/upgrading (you can use the links above).
 
 ## 2. Run the installer
-The authoring tool comes bundled with a user-friendly installer which will walk you through the various steps of the install. To run the installer, execute the following command in a terminal:
+We've build a user-friendly installer utility which will walk you through the various steps of the install.
+
+To run the installer, execute the following command in a terminal:
 ```
 npx adapt-security/adapt-authoring-installer install --prerelease [DIRECTORY]
 ```
