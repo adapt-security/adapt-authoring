@@ -4,10 +4,13 @@
     "enable": true,
     "manualPlugins": ["docs/plugins/install.js"],
     "manualSections": {
-      "install.md": "getting-started",
+      "contributing.md": "contributing",
       "install-dev.md": "advanced",
+      "install.md": "getting-started",
+      "peer-review.md": "contributing",
       "releasing.md": "contributing",
       "run.md": "getting-started",
+      "semver.md": "contributing",
       "update.md": "getting-started"
     }
   },
