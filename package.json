@@ -20,7 +20,6 @@
     "adapt-authoring-config": "adapt-security/adapt-authoring-config",
     "adapt-authoring-core": "adapt-security/adapt-authoring-core",
     "adapt-authoring-jsonschema": "adapt-security/adapt-authoring-jsonschema",
-    "adapt-authoring-lang-en": "taylortom/adapt-authoring-lang-en",
     "adapt-authoring-lang": "adapt-security/adapt-authoring-lang",
     "adapt-authoring-localauth": "adapt-security/adapt-authoring-localauth",
     "adapt-authoring-logger": "adapt-security/adapt-authoring-logger",
