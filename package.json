@@ -8,7 +8,6 @@
   "scripts": {
     "debug": "node --inspect --preserve-symlinks ./bin/start",
     "dev": "node --preserve-symlinks ./bin/start",
-    "dev-init": "node ./bin/dev-init",
     "start": "node ./bin/start"
   },
   "dependencies": {
