@@ -5,6 +5,8 @@
     "manualPlugins": ["docs/plugins/install.js"],
     "manualSections": {
       "contributing.md": "contributing",
+      "git.md": "contributing",
+      "headless-install.md": "advanced",
       "install-dev.md": "advanced",
       "install.md": "getting-started",
       "peer-review.md": "contributing",
