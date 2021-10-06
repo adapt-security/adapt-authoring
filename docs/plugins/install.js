@@ -8,7 +8,7 @@ class Install {
   
   async run() {
     const output = await new Promise((resolve, reject) => {
-      exec(`npx adapt-security/adapt-authoring-installer prereqs`, (error, stdout) => {
+      exec(`npx adapt-security/at-utils prereqs`, (error, stdout) => {
         error ? reject(error) : resolve(stdout);
       });
     });
