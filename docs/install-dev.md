@@ -10,9 +10,9 @@ To do this, you'll need to do the following for each module you have locally:
 3. Run `npm link MODULE_NAME` to install a symlink in your `adapt-authoring` installation.<br/>_ALTERNATIVE_ The included `dev-init` npm task goes one step further than the default `npm link` behaviour, and automatically runs `npm link MODULE_NAME` for all modules listed in the adapt-authoring dependencies. To use this, you simply need to run `npm run dev-init` from your root `adapt-authoring` folder.<br/>**Note: this script will need to be re-run each time you run `npm install`.**
 
 ### Important note
-Symlinks won't work with nested dependencies (i.e. where `adapt-authoring-moduleA` depends on `adapt-authoring-moduleB` and where `adapt-authoring-moduleB` isn't listed in the main adapt-authoring dependencies).
+Symlinks won't work with nested dependencies (i.e. where `adapt-authoring-module1` depends on `adapt-authoring-module2` and where `adapt-authoring-module2` isn't listed in the main adapt-authoring dependencies).
 
-To work around this issue, you can simply list `adapt-authoring-moduleB` in your adapt-authoring `package.json` dependencies.
+To work around this issue, you can simply list `adapt-authoring-module1` in your adapt-authoring `package.json` dependencies.
 
 ## Configuration
 Configuration files are stored in the `conf` folder and named according to the `NODE_ENV` environment variable (`production` is assumed if none is specified), e.g. `/conf/dev.config.js`.
@@ -23,7 +23,7 @@ To help with the population of config files, we have included the the `generate-
 
 As an example, the following command will create a file with all default values in `/conf/dev.config.js`.
 ```
-NODE_ENV=dev npm run generate-config --defaults=y
+NODE_ENV=dev npm run at-confgen --defaults=y
 ```
 
 ## Running
