@@ -1,6 +1,6 @@
 {
   "name": "adapt-authoring",
-  "version": "1.0.0-alpha.9",
+  "version": "1.0.0-alpha.10",
   "description": "A server-based user interface for authoring eLearning courses using the Adapt Framework.",
   "homepage": "https://github.com/adapt-security/adapt-authoring",
   "license": "GPL-3.0",
