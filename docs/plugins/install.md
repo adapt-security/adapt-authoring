@@ -27,8 +27,9 @@ The next step is to run the installer utility which will launch in a web browser
 
 To run the installer, execute the following command in a terminal:
 ```
-npx adapt-security/adapt-authoring-installer install --prerelease [DIRECTORY]
+npx adapt-security/adapt-authoring-installer install [DIRECTORY]
 ```
+> To install prerelease versions, you must include the `--prerelease` flag.
 > If you don't pass the `[DIRECTORY]` param, the application will be installed in a new `adapt-authoring` folder in the current working directory.
 
 Good luck!

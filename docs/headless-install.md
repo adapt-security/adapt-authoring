@@ -11,5 +11,5 @@ You can find instructions on setting up your config file on [this page](configur
 
 ## 2. Run the installer in headless mode
 ```bash
-npx adapt-security/adapt-authoring-installer install --no-ui -p
+npx adapt-security/adapt-authoring-installer install --no-ui --prerelease
 ```
