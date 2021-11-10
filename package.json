@@ -38,6 +38,6 @@
     "adapt-authoring-testing": "adapt-security/adapt-authoring-testing"
   },
   "engines": {
-    "node": "14.x"
+    "node": "14.x || 16.x"
   }
 }
