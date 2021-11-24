@@ -20,7 +20,7 @@ Interested? [See what Adapt can do.](https://www.adaptlearning.org/index.php/ada
 * Built on Node.js, Express, MongoDB, and Backbone.js
 
 ## Full Documentation
-[Visit the developer documentation](https://adapt-security.github.io/adapt-authoring-documentation/) for more information, including [installation instructions](https://adapt-security.github.io/adapt-authoring-documentation/manual/install.html), full API documentation, developer guides, and other information.
+[Visit the developer documentation](https://adapt-security.github.io/adapt-authoring-documentation/) for more information, including [installation instructions](https://tomtaylor.codes/ls/docsify/#/install), full API documentation, developer guides, and other information.
 
 ## Communication
 + [Twitter: @AdaptLearning](https://twitter.com/adaptlearning)
