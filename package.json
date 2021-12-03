@@ -4,6 +4,7 @@
   "description": "A server-based user interface for authoring eLearning courses using the Adapt Framework.",
   "homepage": "https://github.com/adapt-security/adapt-authoring",
   "license": "GPL-3.0",
+  "type": "module",
   "repository": "adapt-security/adapt-authoring",
   "scripts": {
     "debug": "node --inspect --preserve-symlinks ./bin/start",
