@@ -3,7 +3,7 @@
 Getting the latest version of the Adapt authoring tool is as simple as running the installer utility in a terminal with the following command:
 
 ```
-npx adapt-security/adapt-authoring-installer update --prerelease [DIRECTORY]
+npx adapt-security/at-utils update --prerelease [DIRECTORY]
 ```
 > If you don't pass the `[DIRECTORY]` param, the updater will use the current working directory.
 

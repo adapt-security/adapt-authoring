@@ -36,7 +36,7 @@ Please consult the documentation for your specific operating system on how to do
 
 Once you've confirmed the above, you can run the release utility using the following command:
 ```
-npx adapt-security/adapt-authoring-installer update
+npx adapt-security/at-utils release
 ```
 
 The utility will then guide you through the rest.
