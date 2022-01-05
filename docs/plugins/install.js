@@ -1,7 +1,7 @@
-const exec = require('child_process').exec;
-const fs = require('fs-extra');
+import { exec } from 'child_process';
+import fs from 'fs';
 
-class Install {
+export default class Install {
   constructor(app, config, outputDir) {
     this.outputPath = `${outputDir}/install.md`;
   }
@@ -11,7 +11,7 @@ class Install {
         error ? reject(error) : resolve(stdout);
       });
     });
-    let file = fs.readFileSync(`${__dirname}/install.md`).toString();
+    let file = fs.readFileSync(new URL('install.md', import.meta.url)).toString();
     let commandsMd = '';
 
     output.split('\n').forEach(o => {
@@ -27,5 +27,3 @@ class Install {
     this.customFiles = [this.outputPath];
   }
 }
-
-module.exports = Install;
