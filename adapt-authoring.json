@@ -18,6 +18,7 @@
   },
   "essentialApis": [
     "config",
+    "errors",
     "lang",
     "logger"
   ],
