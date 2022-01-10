@@ -22,6 +22,7 @@
     "adapt-authoring-errors": "github:adapt-security/adapt-authoring-errors",
     "adapt-authoring-jsonschema": "github:adapt-security/adapt-authoring-jsonschema",
     "adapt-authoring-lang": "github:adapt-security/adapt-authoring-lang",
+    "adapt-authoring-langpack-en": "github:adapt-security/adapt-authoring-langpack-en",
     "adapt-authoring-localauth": "github:adapt-security/adapt-authoring-localauth",
     "adapt-authoring-logger": "github:adapt-security/adapt-authoring-logger",
     "adapt-authoring-mailer": "github:adapt-security/adapt-authoring-mailer",
