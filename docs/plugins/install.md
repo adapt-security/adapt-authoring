@@ -10,7 +10,7 @@ The first step is to make sure you have the required prerequisites installed, an
 The authoring tool requires the following:
 
 - [git {{{git}}}](https://git-scm.com/downloads): for getting the latest code changes
-- [MongoDB {{{mongod}}}](https://www.mongodb.com/try/download/community): for storing all of your data
+- [MongoDB 4+](https://www.mongodb.com/try/download/community): for storing all of your data
 - [Node.js {{{node}}}](https://nodejs.org/en/download/): for running the code
 - [npm {{{npm}}}](https://nodejs.org/en/download/): for managing dependencies
 
