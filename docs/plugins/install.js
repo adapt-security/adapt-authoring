@@ -2,8 +2,8 @@ import { exec } from 'child_process';
 import fs from 'fs';
 
 export default class Install {
-  constructor(app, config, outputDir) {
-    this.outputPath = `${outputDir}/install.md`;
+  constructor(app, config) {
+    this.outputPath = `${config.outputDir}/install.md`;
   }
   async run() {
     const output = await new Promise((resolve, reject) => {
