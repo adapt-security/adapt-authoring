@@ -3,7 +3,7 @@
   "documentation": {
     "enable": true,
     "manualPlugins": ["docs/plugins/install.js"],
-    "manualSections": {
+    "manualPages": {
       "contributing.md": "contributing",
       "git.md": "contributing",
       "headless-install.md": "advanced",
