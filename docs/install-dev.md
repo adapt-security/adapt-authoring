@@ -1,4 +1,7 @@
 # Developer installation
+
+> Make sure to check the [main install instructions](install) for the list of prerequisites required prior to installation.
+
 If you're a developer working on the Adapt authoring tool, there are a number of included scripts which should come in useful for working on local copies of the code.
 
 ## Installation
