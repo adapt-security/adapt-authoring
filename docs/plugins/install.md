@@ -22,6 +22,10 @@ You can confirm that you have the correct prerequisites installed by executing t
 
 If any of these return errors, or the installed versions don't match the requirements above, please look up the relevant documentation for installing/upgrading (you can use the links above).
 
+### Important note: `node-gyp`
+
+The authoring tool has a dependency on the [`node-gyp`](https://github.com/nodejs/node-gyp) module, which requires a current version of Python and a C++ compiler to run. Depending on your system, you may need to intall these manually. Please see the [`node-gyp` installation instructions](https://github.com/nodejs/node-gyp#installation) for more details, including specific instructions for various OSes.
+
 ## 2. Run the installer
 The next step is to run the installer utility which will launch in a web browser and walk you through the rest of the install.
 
