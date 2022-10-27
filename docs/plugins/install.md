@@ -69,7 +69,7 @@ npx adapt-security/at-utils install [DIRECTORY]
 
 If you're installing the authoring tool on a headless server or otherwise want a more streamlined install process without the installer UI, you can run the installer using the `--no-ui` flag.
 
-> As there's no interface to guide you through the required configuration options, it's expected that you already have a valid configuration file with all of the required attributes. You can find instructions on setting up your config file on [this page](configure-environment).
+> As there's no interface to guide you through the required configuration options, it's assumed that you already have a valid configuration file. You can find instructions on setting this up on [this page](configure-environment).
 
 Run the installer in headless mode with the following command:
 ```bash
