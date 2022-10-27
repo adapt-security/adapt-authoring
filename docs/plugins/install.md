@@ -88,6 +88,6 @@ If you're a developer working on the Adapt authoring tool codebase, you can run 
 
 You can start the installer in dev mode with the following command:
 ```bash
-npx adapt-security/at-utils install --dev
+npx adapt-security/at-utils install --dev [DIRECTORY]
 
 ```
