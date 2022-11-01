@@ -39,7 +39,8 @@
   },
   "devDependencies": {
     "adapt-authoring-docs": "github:adapt-security/adapt-authoring-docs",
-    "adapt-authoring-testing": "github:adapt-security/adapt-authoring-testing"
+    "adapt-authoring-testing": "github:adapt-security/adapt-authoring-testing",
+    "at-utils": "github:adapt-security/at-utils"
   },
   "engines": {
     "node": "16.x"
