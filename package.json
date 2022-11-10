@@ -14,7 +14,7 @@
   "dependencies": {
     "adapt-authoring-adaptframework": "github:adapt-security/adapt-authoring-adaptframework",
     "adapt-authoring-api": "github:adapt-security/adapt-authoring-api",
-    "adapt-authoring-assets": "github:adapt-security/adapt-authoring-assets",
+    "adapt-authoring-assets": "github:adapt-security/adapt-authoring-assets-new",
     "adapt-authoring-auth": "github:adapt-security/adapt-authoring-auth",
     "adapt-authoring-authored": "github:adapt-security/adapt-authoring-authored",
     "adapt-authoring-config": "github:adapt-security/adapt-authoring-config",
