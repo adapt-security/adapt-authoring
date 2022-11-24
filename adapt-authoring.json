@@ -13,10 +13,11 @@
   },
   "essentialApis": [
     "config",
+    "db",
     "errors",
     "lang",
     "logger",
-    "db"
+    "schema"
   ],
   "framework": "5"
 }
