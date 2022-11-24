@@ -15,7 +15,8 @@
     "config",
     "errors",
     "lang",
-    "logger"
+    "logger",
+    "db"
   ],
   "framework": "5"
 }
