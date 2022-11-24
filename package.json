@@ -43,6 +43,6 @@
     "at-utils": "github:adapt-security/at-utils"
   },
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   }
 }
