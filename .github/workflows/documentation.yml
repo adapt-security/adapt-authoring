@@ -1,0 +1,42 @@
+# This workflow generates a new copy of the project documentation
+
+name: Documentation build CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+env:
+  ADAPT_AUTHORING_AUTH__tokenSecret: ${{ secrets.ADAPT_AUTH_TOKEN_SECRET }}
+  ADAPT_AUTHORING_MONGODB__connectionUri: ${{ secrets.ADAPT_MONGODB_URI }}
+  ADAPT_AUTHORING_SERVER__host: 'localhost'
+  ADAPT_AUTHORING_SERVER__port: '5678'
+  ADAPT_AUTHORING_SERVER__url: 'http://localhost:5678'
+  ADAPT_AUTHORING_SESSIONS__secret: ${{ secrets.ADAPT_SESSIONS_SECRET }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm i
+    - run: npx at-docgen
+    - name: Push to documentation repository
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source-directory: 'APP_DATA/temp/docs-build'
+        target-directory: 'docs'
+        destination-github-username: 'adapt-security'
+        destination-repository-name: 'adapt-authoring-documentation'
+        user-name: "github-actions[bot]"
+        target-branch: master
