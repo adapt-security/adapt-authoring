@@ -1,4 +1,4 @@
-name: Snyk vulnerability check
+name: Snyk security
 on: push
 jobs:
   security:
