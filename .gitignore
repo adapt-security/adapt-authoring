@@ -1,5 +1,6 @@
 conf
 data
+local_adapt_modules
 node_modules
 temp
 .rebuild-ui
