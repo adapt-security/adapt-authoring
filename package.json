@@ -42,6 +42,7 @@
     "adapt-authoring-testing": "github:adapt-security/adapt-authoring-testing",
     "at-utils": "github:adapt-security/at-utils"
   },
+  "workspaces": ["./local_adapt_modules/*"],
   "engines": {
     "node": "18.x"
   }
