@@ -4,5 +4,5 @@ nodemon({
   script: './bin/start',
   watch: ['local_adapt_modules'],
   args: ['--rebuild-ui'],
-  ext: 'js,html,hbs,less,css'
+  ext: 'css,js,hbs,html,less,schema.json'
 });
