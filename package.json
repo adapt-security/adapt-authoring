@@ -8,7 +8,7 @@
   "repository": "adapt-security/adapt-authoring",
   "scripts": {
     "debug": "node --inspect --preserve-symlinks ./bin/start",
-    "dev": "node --preserve-symlinks ./bin/start",
+    "dev": "node ./bin/dev",
     "start": "node ./bin/start"
   },
   "dependencies": {
@@ -40,7 +40,8 @@
   "devDependencies": {
     "adapt-authoring-docs": "github:adapt-security/adapt-authoring-docs",
     "adapt-authoring-testing": "github:adapt-security/adapt-authoring-testing",
-    "at-utils": "github:adapt-security/at-utils"
+    "at-utils": "github:adapt-security/at-utils",
+    "nodemon": "^2.0.20"
   },
   "workspaces": ["./local_adapt_modules/*"],
   "engines": {
