@@ -1,5 +1,5 @@
 # Adapt Authoring Tool
-![](http://code.tomtaylor.name/ls/esdoc/badge.svg) [![Join the chat at https://gitter.im/adaptlearning/adapt_authoring](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adaptlearning/adapt_authoring?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Snyk security](https://github.com/adapt-security/adapt-authoring/actions/workflows/snyk.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/snyk.yml) [![Documentation build CI](https://github.com/adapt-security/adapt-authoring/actions/workflows/documentation.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/documentation.yml) [![Join the chat at https://gitter.im/adaptlearning/adapt_authoring](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adaptlearning/adapt_authoring?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## :warning: DISCLAIMER :warning: 
 This is pre-release software and does not represent the final product. This software should not be installed and used in a production environment, and contains incomplete and buggy source code which is currently undergoing a thorough testing and improvement process.
@@ -20,7 +20,7 @@ Interested? [See what Adapt can do.](https://www.adaptlearning.org/index.php/ada
 * Built on Node.js, Express, MongoDB, and Backbone.js
 
 ## Full Documentation
-[Visit the developer documentation](https://adapt-security.github.io/adapt-authoring-documentation/) for more information, including [installation instructions](https://tomtaylor.codes/ls/docsify/#/install), full API documentation, developer guides, and other information.
+[Visit the developer documentation](https://adapt-security.github.io/adapt-authoring-documentation/) for more information, including [installation instructions](https://adapt-security.github.io/adapt-authoring-documentation/manual/#/install), full API documentation, developer guides, and other information.
 
 ## Communication
 + [Twitter: @AdaptLearning](https://twitter.com/adaptlearning)
