@@ -23,7 +23,7 @@
     "adapt-authoring-errors": "github:adapt-security/adapt-authoring-errors",
     "adapt-authoring-jsonschema": "github:adapt-security/adapt-authoring-jsonschema",
     "adapt-authoring-lang": "github:adapt-security/adapt-authoring-lang",
-    "adapt-authoring-langpack-en": "github:adapt-security/adapt-authoring-langpack-en",
+    "adapt-authoring-langpack-en": "github:adapt-security/adapt-authoring-langpack-en#no-sidebar",
     "adapt-authoring-localauth": "github:adapt-security/adapt-authoring-localauth",
     "adapt-authoring-logger": "github:adapt-security/adapt-authoring-logger",
     "adapt-authoring-mailer": "github:adapt-security/adapt-authoring-mailer",
@@ -34,8 +34,25 @@
     "adapt-authoring-server": "github:adapt-security/adapt-authoring-server",
     "adapt-authoring-sessions": "github:adapt-security/adapt-authoring-sessions",
     "adapt-authoring-tags": "github:adapt-security/adapt-authoring-tags",
-    "adapt-authoring-ui": "github:adapt-security/adapt-authoring-ui",
-    "adapt-authoring-users": "github:adapt-security/adapt-authoring-users"
+    "adapt-authoring-ui": "github:adapt-security/adapt-authoring-ui#no-sidebar",
+    "adapt-authoring-users": "github:adapt-security/adapt-authoring-users",
+    "adapt-authoring-vcs-course": "^0.0.1",
+    "chalk": "^2.4.1",
+    "columnify": "^1.5.4",
+    "fs-extra": "^8.1.0",
+    "globs": "^0.1.4",
+    "grunt": "^1.4.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-newer": "^1.3.0",
+    "grunt-replace": "^2.0.2",
+    "handlebars": "^4.7.7",
+    "jit-grunt": "github:chris-steele/jit-grunt",
+    "less": "^3.9.0",
+    "load-grunt-config": "github:justlep/load-grunt-config",
+    "nsdeclare": "^0.1.0",
+    "time-grunt": "^2.0.0",
+    "underscore": "^1.13.1"
   },
   "devDependencies": {
     "adapt-authoring-docs": "github:adapt-security/adapt-authoring-docs",
@@ -44,5 +61,8 @@
   },
   "engines": {
     "node": "18.x"
-  }
+  },
+  "workspaces": [
+    "local_adapt_modules/adapt-authoring-vcs-course"
+  ]
 }
