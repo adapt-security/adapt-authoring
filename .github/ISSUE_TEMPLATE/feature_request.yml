@@ -1,0 +1,23 @@
+name: Feature request
+description: Request a new feature
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to request a new feature in the Adapt authoring tool! The Adapt team will consider all new feature requests, but unfortunately cannot commit to every one.
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature description
+      description: Please describe your feature request
+    validations:
+      required: true
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Can you work on this feature?
+      description: If you are able to commit your own time to work on this feature, it will greatly increase the liklihood of it being implemented by the core dev team. Otherwise, it will be triaged and prioritised alongside the core team's current priorities.
+      options:
+        - label: I can contribute

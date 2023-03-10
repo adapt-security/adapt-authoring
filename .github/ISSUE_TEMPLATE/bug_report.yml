@@ -1,0 +1,58 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Please describe the issue
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: Tell us what should have happened
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Steps to reproduce
+      description: Tell us how to reproduce the issue
+    validations:
+      required: true
+  - type: input
+    id: aat-version
+    attributes:
+      label: Authoring tool version
+      description: What version of the Adapt authoring tool are you running?
+    validations:
+      required: true
+  - type: input
+    id: fw-version
+    attributes:
+      label: Framework version
+      description: What version of the Adapt framework are you running?
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: sh
