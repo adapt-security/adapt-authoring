@@ -1,6 +1,5 @@
 name: Bug Report
 description: File a bug report
-title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
@@ -38,8 +37,6 @@ body:
     attributes:
       label: Framework version
       description: What version of the Adapt framework are you running?
-    validations:
-      required: true
   - type: dropdown
     id: browsers
     attributes:
