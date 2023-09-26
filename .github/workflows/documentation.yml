@@ -20,7 +20,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x]
-        mongodb-version: [7.x]
+        mongodb-version: [6.x]
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
