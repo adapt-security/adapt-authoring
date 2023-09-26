@@ -5,7 +5,7 @@ name: Lang string check CI
 on:
   push:
     branches:
-      - main
+      - master
       - 'release/**'
 
 env:
