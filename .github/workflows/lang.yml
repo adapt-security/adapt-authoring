@@ -10,7 +10,7 @@ on:
 
 env:
   ADAPT_AUTHORING_AUTH__tokenSecret: ${{ secrets.ADAPT_AUTH_TOKEN_SECRET }}
-  ADAPT_AUTHORING_MONGODB__connectionUri: ${{ secrets.ADAPT_MONGODB_URI }}
+  ADAPT_AUTHORING_MONGODB__connectionUri: 'mongodb://0.0.0.0/adapt-authoring'
   ADAPT_AUTHORING_SERVER__host: 'localhost'
   ADAPT_AUTHORING_SERVER__port: '5678'
   ADAPT_AUTHORING_SERVER__url: 'http://localhost:5678'
@@ -22,6 +22,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x]
+        mongodb-version: [7.0]
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -29,5 +30,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Start MongoDB
+      uses: supercharge/mongodb-github-action@1.10.0
+      with:
+        mongodb-version: ${{ matrix.mongodb-version }}
     - run: npm i
     - run: npx at-langcheck
