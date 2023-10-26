@@ -48,6 +48,6 @@
     "./local_adapt_modules/*"
   ],
   "engines": {
-    "node": "18.x"
+    "node": ">18 <=20"
   }
 }
