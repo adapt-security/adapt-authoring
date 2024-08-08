@@ -9,7 +9,8 @@
   "scripts": {
     "debug": "node --inspect --preserve-symlinks ./bin/start",
     "dev": "node ./bin/dev",
-    "start": "node ./bin/start"
+    "start": "node ./bin/start",
+    "postinstall": "node ./lib/removeWorkspaceDuplicates.js"
   },
   "dependencies": {
     "adapt-authoring-adaptframework": "github:adapt-security/adapt-authoring-adaptframework",
