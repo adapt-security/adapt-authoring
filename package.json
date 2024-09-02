@@ -1,6 +1,6 @@
 {
   "name": "adapt-authoring",
-  "version": "1.0.0-rc.3",
+  "version": "1.0.0-rc.4",
   "description": "A server-based user interface for authoring eLearning courses using the Adapt Framework.",
   "homepage": "https://github.com/adapt-security/adapt-authoring",
   "license": "GPL-3.0",
@@ -19,6 +19,7 @@
     "adapt-authoring-authored": "github:adapt-security/adapt-authoring-authored",
     "adapt-authoring-config": "github:adapt-security/adapt-authoring-config",
     "adapt-authoring-core": "github:adapt-security/adapt-authoring-core",
+    "adapt-authoring-debug": "github:taylortom/adapt-authoring-debug",
     "adapt-authoring-defaultplugins": "github:adapt-security/adapt-authoring-defaultplugins",
     "adapt-authoring-errors": "github:adapt-security/adapt-authoring-errors",
     "adapt-authoring-jsonschema": "github:adapt-security/adapt-authoring-jsonschema",
@@ -41,13 +42,13 @@
     "adapt-authoring-docs": "github:adapt-security/adapt-authoring-docs",
     "adapt-authoring-testing": "github:adapt-security/adapt-authoring-testing",
     "at-utils": "github:adapt-security/at-utils",
-    "eslint": "^8.36.0",
-    "standard": "^17.0.0"
+    "eslint": "^8.56.0",
+    "standard": "^17.1.0"
   },
   "workspaces": [
     "./local_adapt_modules/*"
   ],
   "engines": {
-    "node": "18.x"
+    "node": "18 - 20"
   }
 }
