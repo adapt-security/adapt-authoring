@@ -20,6 +20,7 @@
     "adapt-authoring-authored": "github:adapt-security/adapt-authoring-authored",
     "adapt-authoring-config": "github:adapt-security/adapt-authoring-config",
     "adapt-authoring-core": "github:adapt-security/adapt-authoring-core",
+    "adapt-authoring-debug": "github:taylortom/adapt-authoring-debug",
     "adapt-authoring-defaultplugins": "github:adapt-security/adapt-authoring-defaultplugins",
     "adapt-authoring-errors": "github:adapt-security/adapt-authoring-errors",
     "adapt-authoring-jsonschema": "github:adapt-security/adapt-authoring-jsonschema",
