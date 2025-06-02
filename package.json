@@ -42,7 +42,7 @@
     "adapt-authoring-docs": "github:adapt-security/adapt-authoring-docs",
     "adapt-authoring-testing": "github:adapt-security/adapt-authoring-testing",
     "at-utils": "github:adapt-security/at-utils",
-    "eslint": "^9.22.0",
+    "eslint": "^9.28.0",
     "standard": "^17.1.0"
   },
   "workspaces": [
