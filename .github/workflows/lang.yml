@@ -4,9 +4,6 @@ name: Lang string check CI
 
 on:
   push:
-    branches:
-      - master
-      - 'release/**'
 
 env:
   ADAPT_AUTHORING_AUTH__tokenSecret: ${{ secrets.ADAPT_AUTH_TOKEN_SECRET }}
