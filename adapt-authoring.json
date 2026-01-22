@@ -1,15 +1,7 @@
 {
   "module": false,
   "documentation": {
-    "enable": true,
-    "manualPages": {
-      "contributing.md": "contributing",
-      "git.md": "contributing",
-      "peer-review.md": "contributing",
-      "releasing.md": "contributing",
-      "run.md": "getting-started",
-      "semver.md": "contributing"
-    }
+    "enable": true
   },
   "essentialApis": [
     "config",
