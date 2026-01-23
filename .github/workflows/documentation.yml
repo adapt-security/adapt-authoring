@@ -13,6 +13,7 @@ env:
   ADAPT_AUTHORING_SERVER__port: '5678'
   ADAPT_AUTHORING_SERVER__url: 'http://localhost:5678'
   ADAPT_AUTHORING_SESSIONS__secret: ${{ secrets.ADAPT_SESSIONS_SECRET }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
