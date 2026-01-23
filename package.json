@@ -40,7 +40,6 @@
   },
   "devDependencies": {
     "adapt-authoring-docs": "^1.0.0",
-    "adapt-authoring-testing": "github:adapt-security/adapt-authoring-testing",
     "at-utils": "github:adapt-security/at-utils",
     "standard": "^17.1.0"
   },
