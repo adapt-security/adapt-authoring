@@ -1,6 +1,6 @@
 # This workflow checks app for unused or missing lang strings
 
-name: Lang string check CI
+name: Language strings
 
 on: push
 

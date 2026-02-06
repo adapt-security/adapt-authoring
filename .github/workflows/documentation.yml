@@ -1,6 +1,6 @@
 # This workflow generates a new copy of the project documentation
 
-name: Documentation build CI
+name: Documentation
 
 on:
   push:

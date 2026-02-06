@@ -1,4 +1,4 @@
-name: Standard.js formatting check
+name: Standard.js
 on:
   pull_request:
 
