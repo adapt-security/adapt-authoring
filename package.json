@@ -27,7 +27,7 @@
     "adapt-authoring-lang": "^1.0.4",
     "adapt-authoring-langpack-en": "^1.1.1",
     "adapt-authoring-logger": "^1.1.1",
-    "adapt-authoring-mailer": "^1.0.1",
+    "adapt-authoring-mailer": "^1.0.2",
     "adapt-authoring-middleware": "^1.0.0",
     "adapt-authoring-mongodb": "^1.1.1",
     "adapt-authoring-mongodblogger": "^1.0.1",
