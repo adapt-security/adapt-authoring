@@ -33,7 +33,7 @@
     "adapt-authoring-mongodblogger": "^1.0.1",
     "adapt-authoring-roles": "^1.1.2",
     "adapt-authoring-server": "^1.0.2",
-    "adapt-authoring-sessions": "^1.0.1",
+    "adapt-authoring-sessions": "^1.0.2",
     "adapt-authoring-tags": "^1.0.1",
     "adapt-authoring-ui": "^1.4.6",
     "adapt-authoring-users": "^1.0.1"
