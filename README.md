@@ -1,5 +1,9 @@
 # Adapt Authoring Tool
-[![Snyk security](https://github.com/adapt-security/adapt-authoring/actions/workflows/snyk.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/snyk.yml) [![Documentation](https://github.com/adapt-security/adapt-authoring/actions/workflows/documentation.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/documentation.yml) [![Language strings](https://github.com/adapt-security/adapt-authoring/actions/workflows/lang.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/lang.yml) [![Join the chat at https://gitter.im/adaptlearning/adapt_authoring](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adaptlearning/adapt_authoring?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Integration tests](https://github.com/adapt-security/adapt-authoring/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/integration-tests.yml)
+[![Standard.js](https://github.com/adapt-security/adapt-authoring/actions/workflows/standardjs.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/standardjs.yml)
+[![Language strings](https://github.com/adapt-security/adapt-authoring/actions/workflows/lang.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/lang.yml)
+[![Documentation](https://github.com/adapt-security/adapt-authoring/actions/workflows/documentation.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/documentation.yml)
+[![Join the chat at https://gitter.im/adaptlearning/adapt_authoring](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adaptlearning/adapt_authoring?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## :warning: DISCLAIMER :warning: 
 This is pre-release software and does not represent the final product. This software should not be installed and used in a production environment, and contains incomplete and buggy source code which is currently undergoing a thorough testing and improvement process.
