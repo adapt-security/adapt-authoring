@@ -38,7 +38,7 @@ jobs:
         mongodb-version: ${{ matrix.mongodb-version }}
 
     - name: Install dependencies
-      run: npm i
+      run: npm ci
 
     - name: Download custom test data
       run: gh repo clone ${{ env.CUSTOM_REPO }} custom
