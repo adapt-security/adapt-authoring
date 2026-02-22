@@ -16,8 +16,8 @@
     "adapt-authoring-adaptframework": "^2.0.0",
     "adapt-authoring-api": "^2.0.0",
     "adapt-authoring-assets": "^1.2.1",
-    "adapt-authoring-auth": "^1.0.1",
-    "adapt-authoring-auth-local": "^1.0.1",
+    "adapt-authoring-auth": "^2.0.0",
+    "adapt-authoring-auth-local": "^2.0.0",
     "adapt-authoring-authored": "^1.1.0",
     "adapt-authoring-config": "^1.1.4",
     "adapt-authoring-core": "^2.0.0",
@@ -35,7 +35,7 @@
     "adapt-authoring-server": "^2.0.0",
     "adapt-authoring-sessions": "^1.0.2",
     "adapt-authoring-tags": "^1.0.1",
-    "adapt-authoring-ui": "^1.4.6",
+    "adapt-authoring-ui": "^2.0.0",
     "adapt-authoring-users": "^1.0.1"
   },
   "devDependencies": {
