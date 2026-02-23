@@ -10,7 +10,8 @@
     "debug": "node --inspect --preserve-symlinks ./bin/start",
     "dev": "node ./bin/dev",
     "start": "node ./bin/start",
-    "postinstall": "node ./lib/removeWorkspaceDuplicates.js"
+    "postinstall": "node ./lib/removeWorkspaceDuplicates.js",
+    "test": "npx at-integration-test"
   },
   "dependencies": {
     "adapt-authoring-adaptframework": "^2.0.0",
