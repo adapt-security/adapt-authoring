@@ -3,6 +3,7 @@ name: Integration tests
 on:
   push:
     branches: [ "master" ]
+  workflow_dispatch:
 
 env:
   ADAPT_AUTHORING_AUTH__tokenSecret: 'test-auth-secret-for-ci'
