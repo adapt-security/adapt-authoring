@@ -12,7 +12,7 @@ env:
   ADAPT_AUTHORING_SERVER__port: '5678'
   ADAPT_AUTHORING_SERVER__url: 'http://localhost:5678'
   ADAPT_AUTHORING_SESSIONS__secret: 'test-sessions-secret-for-ci'
-  CUSTOM_REPO: adapt-security/adapt-authoring-integration-data
+  CUSTOM_DIR: node_modules/adapt-authoring-integration-data
 
 jobs:
   default:
