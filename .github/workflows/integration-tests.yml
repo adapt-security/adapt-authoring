@@ -40,12 +40,5 @@ jobs:
     - name: Install dependencies
       run: npm ci --legacy-peer-deps
 
-    - name: Download custom test data
-      run: gh repo clone ${{ env.CUSTOM_REPO }} custom
-      env:
-        GH_TOKEN: ${{ github.token }}
-
     - name: Run integration tests
       run: npx at-integration-test
-      env:
-        CUSTOM_DIR: ${{ github.workspace }}/custom
