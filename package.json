@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "adapt-authoring-docs": "^1.0.0",
+    "adapt-authoring-integration-data": "github:adapt-security/adapt-authoring-integration-data",
     "adapt-authoring-integration-tests": "github:adapt-security/adapt-authoring-integration-tests",
     "at-utils": "github:adapt-security/at-utils",
     "standard": "^17.1.0"
