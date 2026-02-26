@@ -40,10 +40,13 @@
     "adapt-authoring-users": "^1.0.1"
   },
   "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
     "adapt-authoring-docs": "^1.0.0",
     "adapt-authoring-integration-data": "github:adapt-security/adapt-authoring-integration-data",
     "adapt-authoring-integration-tests": "github:adapt-security/adapt-authoring-integration-tests",
     "at-utils": "github:adapt-security/at-utils",
+    "conventional-changelog-eslint": "^6.0.0",
+    "semantic-release": "^25.0.2",
     "standard": "^17.1.0"
   },
   "workspaces": [
@@ -51,5 +54,32 @@
   ],
   "engines": {
     "node": "24"
+  },
+  "release": {
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "eslint"
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "eslint"
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json"
+          ],
+          "message": "Chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
   }
 }
