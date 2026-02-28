@@ -1,0 +1,85 @@
+name: Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: Check for changes
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Determine version bump
+        id: version
+        run: |
+          RESULT=$(npx at-utils version-check --json 2>/dev/null | grep -v '^Running ')
+          VERSION=$(echo "$RESULT" | jq -r '.recommendedVersion')
+          if [ "$VERSION" = "null" ] || [ -z "$VERSION" ]; then
+            echo 'No dependency changes, nothing to release'
+            exit 0
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "Recommended version: $VERSION"
+
+  release:
+    name: Release
+    needs: check
+    if: needs.check.outputs.version != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate release notes
+        run: npx at-utils release-notes | grep -v '^Running ' > release-notes.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Bump version, commit, and tag
+        run: |
+          VERSION=${{ needs.check.outputs.version }}
+          npm version "$VERSION" --no-git-tag-version
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json
+          git commit -m "Chore(release): $VERSION [skip ci]"
+          git tag "v$VERSION"
+          git push origin HEAD
+          git push origin "v$VERSION"
+
+      - name: Create GitHub release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION=${{ needs.check.outputs.version }}
+          if [ -s release-notes.md ] && ! grep -qE 'No (dependency changes|release notes found)' release-notes.md; then
+            gh release create "v$VERSION" --title "v$VERSION" --notes-file release-notes.md
+          else
+            gh release create "v$VERSION" --title "v$VERSION" --generate-notes
+          fi
