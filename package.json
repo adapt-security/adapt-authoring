@@ -36,7 +36,7 @@
     "adapt-authoring-server": "^2.0.0",
     "adapt-authoring-sessions": "^1.0.2",
     "adapt-authoring-tags": "^1.0.1",
-    "adapt-authoring-ui": "^2.0.0",
+    "adapt-authoring-ui": "^2.0.2",
     "adapt-authoring-users": "^1.0.1"
   },
   "devDependencies": {
