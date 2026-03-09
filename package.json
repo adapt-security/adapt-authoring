@@ -18,7 +18,7 @@
     "adapt-authoring-api": "^3.1.4",
     "adapt-authoring-assets": "^1.2.1",
     "adapt-authoring-auth": "^2.0.0",
-    "adapt-authoring-auth-local": "^2.0.0",
+    "adapt-authoring-auth-local": "^2.3.3",
     "adapt-authoring-authored": "^1.1.0",
     "adapt-authoring-config": "^1.1.4",
     "adapt-authoring-core": "^2.0.0",
