@@ -14,7 +14,7 @@
     "test": "npx at-integration-test"
   },
   "dependencies": {
-    "adapt-authoring-adaptframework": "^2.0.0",
+    "adapt-authoring-adaptframework": "^2.3.2",
     "adapt-authoring-api": "^3.1.4",
     "adapt-authoring-assets": "^1.2.1",
     "adapt-authoring-auth": "^2.0.0",
