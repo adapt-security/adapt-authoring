@@ -26,14 +26,6 @@ Interested? [See what Adapt can do.](https://www.adaptlearning.org/index.php/ada
 ## Full Documentation
 [Visit the developer documentation](https://adapt-security.github.io/adapt-authoring-documentation/) for more information, including [installation instructions](https://adapt-security.github.io/adapt-authoring-documentation/manual/#/install-update-run), full API documentation, developer guides, and other information.
 
-## Communication
-+ [Twitter: @AdaptLearning](https://twitter.com/adaptlearning)
-+ [Gitter](https://gitter.im/orgs/adaptlearning/rooms)
-+ [Community Site](https://community.adaptlearning.org/)
-+ [Technical Forum](https://community.adaptlearning.org/mod/forum/view.php?id=4)
-+ [Bugs / Feature Requests](https://github.com/adaptlearning/adapt_authoring/issues)
-+ [Responsive e-Learning Forum](https://community.adaptlearning.org/mod/forum/view.php?id=56)
-
 ## Contributing to Adapt
 See [Contributing to the Adapt authoring tool](https://adapt-security.github.io/adapt-authoring-documentation/manual/contributing.html).
 
