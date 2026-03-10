@@ -30,7 +30,6 @@ Interested? [See what Adapt can do.](https://www.adaptlearning.org/index.php/ada
 See [Contributing to the Adapt authoring tool](https://adapt-security.github.io/adapt-authoring-documentation/manual/contributing.html).
 
 ## Troubleshooting, Bugs, and Feedback
-+ For help with troubleshooting, visit the [Technical Discussion Forum](https://community.adaptlearning.org/mod/forum/view.php?id=4).
 + To report a bug, please [GitHub Issues](https://github.com/adapt-security/adapt-authoring/issues).
 + To provide feedback, please use the [GitHub Issues](https://github.com/adapt-security/adapt-authoring/issues).
 
