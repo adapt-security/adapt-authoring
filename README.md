@@ -42,5 +42,17 @@ See [Contributing to the Adapt authoring tool](https://adapt-security.github.io/
 + To report a bug, please [GitHub Issues](https://github.com/adapt-security/adapt-authoring/issues).
 + To provide feedback, please use the [GitHub Issues](https://github.com/adapt-security/adapt-authoring/issues).
 
+## Security Policy
+
+The Adapt project is committed to the security of our software. We welcome security reports from the community, and will investigate and address any issues promptly based on their severity.
+
+If you believe you have found a security vulnerability in our code, please report it using GitHub's security advisory feature via [this link](https://github.com/adapt-security/adapt-authoring/security/advisories/new).
+
+You will be guided through the information needed to submit your report.
+
+***
+
+Thank you for helping make Adapt safe for everyone!
+
 ## License
 <a href="https://community.adaptlearning.org/" target="_blank"><img src="https://raw.githubusercontent.com/adaptlearning/documentation/master/04_wiki_assets/adapt_framework/adapt-learning-logo.jpg" alt="adapt learning logo" align="right"></a>  Adapt is licensed under the [GNU General Public License, Version 3](https://github.com/adaptlearning/adapt_authoring/blob/master/LICENSE).
