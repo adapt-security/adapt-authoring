@@ -20,7 +20,7 @@
     "adapt-authoring-auth-local": "^2.0.0",
     "adapt-authoring-authored": "^1.1.0",
     "adapt-authoring-config": "^1.1.4",
-    "adapt-authoring-core": "^2.0.0",
+    "adapt-authoring-core": "^2.4.3",
     "adapt-authoring-defaultplugins": "^1.0.1",
     "adapt-authoring-errors": "^1.0.0",
     "adapt-authoring-jsonschema": "^1.1.3",
