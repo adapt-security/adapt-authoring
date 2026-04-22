@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@adapt-security/at-utils": "0.21.1",
-    "adapt-authoring-docs": "1.4.4",
+    "adapt-authoring-docs": "1.4.5",
     "adapt-authoring-integration-data": "1.0.0",
     "adapt-authoring-integration-tests": "1.6.0",
     "standard": "^17.1.0"
