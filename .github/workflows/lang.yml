@@ -31,4 +31,4 @@ jobs:
       with:
         mongodb-version: ${{ matrix.mongodb-version }}
     - run: npm i
-    - run: npx at-langcheck
+    - run: npx at-utils lang-check
