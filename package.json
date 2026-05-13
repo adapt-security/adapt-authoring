@@ -35,7 +35,7 @@
     "@adapt-security/at-utils": "1.0.0",
     "adapt-authoring-docs": "1.4.6",
     "adapt-authoring-integration-data": "1.0.0",
-    "adapt-authoring-integration-tests": "1.7.1",
+    "adapt-authoring-integration-tests": "1.7.2",
     "standard": "^17.1.0"
   },
   "overrides": {
