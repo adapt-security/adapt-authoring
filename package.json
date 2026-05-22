@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "adapt-authoring-adaptframework": "3.0.0",
-    "adapt-authoring-assets": "1.6.1",
+    "adapt-authoring-assets": "1.6.2",
     "adapt-authoring-auth": "2.4.4",
     "adapt-authoring-auth-local": "2.4.1",
     "adapt-authoring-authored": "1.4.1",
