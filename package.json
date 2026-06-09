@@ -23,7 +23,7 @@
     "adapt-authoring-mailer": "1.4.1",
     "adapt-authoring-middleware": "1.5.1",
     "adapt-authoring-migrations": "2.0.0",
-    "adapt-authoring-mongodb": "3.2.0",
+    "adapt-authoring-mongodb": "3.3.2",
     "adapt-authoring-mongodblogger": "1.6.0",
     "adapt-authoring-roles": "1.5.2",
     "adapt-authoring-server": "2.3.1",
