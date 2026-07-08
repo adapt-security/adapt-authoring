@@ -21,7 +21,7 @@
     "adapt-authoring-jsonschema": "1.6.0",
     "adapt-authoring-langpack-en": "2.0.1",
     "adapt-authoring-mailer": "1.4.1",
-    "adapt-authoring-middleware": "1.5.1",
+    "adapt-authoring-middleware": "1.7.0",
     "adapt-authoring-migrations": "2.0.0",
     "adapt-authoring-mongodb": "3.3.2",
     "adapt-authoring-mongodblogger": "1.6.0",
