@@ -1,0 +1,18 @@
+name: Add to project
+on:
+  issues:
+    types:
+      - opened
+      - reopened
+  pull_request:
+    types:
+      - opened
+      - reopened
+  workflow_dispatch:
+jobs:
+  add-to-project:
+    uses: adapt-security/.github/.github/workflows/addtoproject.yml@main
+    with:
+      project-url: https://github.com/orgs/adapt-security/projects/5
+    secrets:
+      ADDTOPROJECT_TOKEN: ${{ secrets.ADDTOPROJECT_TOKEN }}
