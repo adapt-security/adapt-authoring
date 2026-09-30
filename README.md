@@ -4,7 +4,12 @@
 [![Language strings](https://github.com/adapt-security/adapt-authoring/actions/workflows/lang.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/lang.yml)
 [![Documentation](https://github.com/adapt-security/adapt-authoring/actions/workflows/documentation.yml/badge.svg)](https://github.com/adapt-security/adapt-authoring/actions/workflows/documentation.yml)
 
-> **Note:** This is an early release and is under active development. Some features may be incomplete or subject to change.
+> [!WARNING]
+> **This project is no longer maintained.**
+>
+> This repository and the `adapt-authoring-*` module repositories in this organisation have been archived. They will not receive bug fixes, security updates or new releases, and issues and pull requests are no longer accepted.
+>
+> The code in these repositories remains available, as published here, under the terms of the GNU General Public License v3.0. This notice concerns only the code in these repositories and does not grant any rights in, or make any statement about, any other software.
 
 ---
 
